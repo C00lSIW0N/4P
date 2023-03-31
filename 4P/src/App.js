@@ -1,18 +1,13 @@
 // import NavPage from "./components/NavPage";
-import { Route, Link } from "react-router-dom";
-import Main from './components/Main';
+import { Route, Routes } from "react-router-dom";
+import Main from './components/MainPage';
 
-function App() {
-  return (
-    <div>
-      <ul>
-      <li><Link to="/">newpage</Link></li>
-      </ul>
-      <Routes>
-        <Route path="/" element={<Main />}></Route>
-      </Routes>
-    </div>
-  );
-}
+const App = () => (
+  <Routes>
+  <Route path='/' element={<Main />}/>
+  <Route path='/main' element={<Main />}/>
+  {/* <Route path='*' element={<Error />}/> */}
+</Routes>
 
+);
 export default App;

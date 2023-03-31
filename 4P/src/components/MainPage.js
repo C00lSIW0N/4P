@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 
 export const Main = () => {
   return (
-    <div className="mainpage">
-      <h1><Link to="/navpage">NavPage</Link></h1>
+    <div className='main'>
+      <h1>ㅎㅇ요</h1>
+      <h1><Link to='navpage'>zz</Link></h1>
     </div>
   );
 }
