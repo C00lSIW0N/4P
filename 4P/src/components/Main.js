@@ -1,17 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
-const Main = () => {
-  const navigate = useNavigate();
- 
-  const navigateToNavPage = () => {
-    navigate("/navpage");
-  };
- 
+export const Main = () => {
   return (
-          <button><Link to= '/' className="links">NavPage</Link></button>
+    <div className="mainpage">
+      <h1><Link to="/navpage">NavPage</Link></h1>
+    </div>
   );
-};
+}
  
 export default Main;
