@@ -6,7 +6,7 @@
 import firebase from 'firebase/compat/app';
 // import { initializeApp } from "firebase/app";
 import 'firebase/compat/firestore';
-
+// v9 compat packages are API compatible with v8 code
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
