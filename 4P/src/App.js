@@ -44,3 +44,32 @@ function App() {
 export default App;
 */
 
+import "./App.css";
+import React from "react";
+//import { RecoilRoot } from "recoil";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import EyTitle from "./components/EyTitle";
+import ReMainPage from "./pages/ReMainPage";
+import ReservationPage from "./pages/ReservationPage";
+import CancellationPage from "./pages/CancellationPage";
+import ConfirmationPage from "./pages/ConfirmationPage";
+
+
+function App() {
+  return (
+    <div className="App">
+      <EyTitle />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ReMainPage/>} />  
+          <Route path="/remain" element={<ReMainPage/>} />
+          <Route path="/reservation" element={<ReservationPage/>}/>
+          <Route path="/confirmation" element={<ConfirmationPage/>}/>
+          <Route path="/cancellation" element={<CancellationPage/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+export default App;

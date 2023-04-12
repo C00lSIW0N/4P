@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function title() {
+function EyTitle() {
   return (
     <Navbar bg="light" variant="light">
         <Container>
@@ -17,11 +17,11 @@ function title() {
             <NavDropdown
                     title="예약 및 취소"
                   >
-                    <NavDropdown.Item href="/Confirmation">
+                    <NavDropdown.Item href="/confirmation">
                       Confirmation
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/Cancellation">
+                    <NavDropdown.Item href="/cancellation">
                       Cancellation
                     </NavDropdown.Item>
                   </NavDropdown>
@@ -31,4 +31,4 @@ function title() {
   )
 }
 
-export default title;
+export default EyTitle;
