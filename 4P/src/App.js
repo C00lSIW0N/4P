@@ -23,7 +23,7 @@
 // export default App;
 
 // import './App.css';
-import { firestore } from './firebase_config';
+/*import { firestore } from './firebase_config';
 import { useEffect } from 'react';
 
 function App() {
@@ -42,3 +42,5 @@ function App() {
 }
 
 export default App;
+*/
+
