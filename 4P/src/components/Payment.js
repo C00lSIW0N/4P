@@ -89,15 +89,15 @@ const Payment = (effect, deps) => {
       document.head.removeChild(iamport);
     }},
   []);
-  const Pay = () => {
+  const Pay_toss = () => {
     const { IMP } = window;
     IMP.init('imp02656648');
 
       const data = {
-    		pg: 'kakopay.TC0ONETIME',
+    		pg: 'tosspay',
     		pay_method: 'card',
     		merchant_uid: `mid_${new Date().getTime()}`,
-    		name: '테스트',
+    		name: '토스페이 테스트',
     		amount: '1000',
     		custom_data: {
             name: '부가정보',
@@ -111,6 +111,72 @@ const Payment = (effect, deps) => {
     	};
       IMP.request_pay(data,callback);
     }
+    const Pay_kg = () => {
+      const { IMP } = window;
+      IMP.init('imp02656648');
+
+      const data = {
+        pg: 'inicis',
+        pay_method: 'card',
+        merchant_uid: `mid_${new Date().getTime()}`,
+        name: 'kg이니시스 테스트',
+        amount: '1000',
+        custom_data: {
+            name: '부가정보',
+            desc: '세부 부가정보'
+        },
+          buyer_name: '홍길길',
+          buyer_tel: '1234134234',
+          buyer_email: 'hansung@hansung.ac.kr',
+          buyer_addr: '성북구 삼선교로 16길 116',
+          buyer_postalcode: '02876'
+      };
+        IMP.request_pay(data,callback);
+      }
+    const Pay_kakao = () => {
+      const { IMP } = window;
+      IMP.init('imp02656648');
+  
+        const data = {
+          pg: 'kakaopay',
+          pay_method: 'card',
+          merchant_uid: `mid_${new Date().getTime()}`,
+          name: '카카오페이 테스트',
+          amount: '1000',
+          custom_data: {
+              name: '부가정보',
+              desc: '세부 부가정보'
+          },
+          buyer_name: '홍길동',
+          buyer_tel: '027604114',
+          buyer_email: 'hansung@hansung.ac.kr',
+          buyer_addr: '성북구 삼선교로 16길 116',
+          buyer_postalcode: '02876'
+        };
+        IMP.request_pay(data,callback);
+      }
+    const Pay_payco = () => {
+        const { IMP } = window;
+        IMP.init('imp02656648');
+    
+          const data = {
+            pg: 'payco',
+            pay_method: 'card',
+            merchant_uid: `mid_${new Date().getTime()}`,
+            name: '페이코 테스트',
+            amount: '1000',
+            custom_data: {
+                name: '부가정보',
+                desc: '세부 부가정보'
+            },
+            buyer_name: '홍길동',
+            buyer_tel: '027604114',
+            buyer_email: 'hansung@hansung.ac.kr',
+            buyer_addr: '성북구 삼선교로 16길 116',
+            buyer_postalcode: '02876'
+          };
+          IMP.request_pay(data,callback);
+        }      
       const callback = (rsp) => {
         const {success, error_msg, imp_uid, merchant_uid, pay_method, paid_amount, status} = rsp;
     	if (success){
@@ -129,7 +195,13 @@ const Payment = (effect, deps) => {
 	// }
   return (
     <>
-    <button onClick={Pay}>결제하기</button>
+    <button onClick={Pay_toss}>토스페이로 결제하기</button>
+  <br />
+    <button onClick={Pay_kg}>카드로 결제하기</button>
+  <br />
+    <button onClick={Pay_kakao}>카카오페이로 결제하기</button>
+  <br />
+    <button onClick={Pay_payco}>페이코로 결제하기</button>  
     </>
 );
 }

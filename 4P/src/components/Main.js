@@ -9,6 +9,7 @@ const Main = () => {
     <>
       <h1>메인</h1>
       <h1><Link to='payment'>결제 페이지</Link></h1>
+      <h1><Link to='book'>예약 페이지</Link></h1>
     </>
   );
 }
