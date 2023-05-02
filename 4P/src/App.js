@@ -3,7 +3,8 @@ import Main from './components/Main';
 import { getFirestore } from "./firebase_config.js";
 import { useEffect } from "react";
 import Payment from "./components/Payment";
-import Book from "./components/Book";
+import List from "./components/List";
+import DetailPage from "./components/Detailpage";
 // import Login from "./components/Login";
 
 
@@ -16,7 +17,8 @@ const App = () => {
         <Route path='/' element={<Main />}></Route>
   {/* <Route path='/main' element={<Main />}/> */}
         <Route path='/payment' element={<Payment />}></Route>
-        <Route path='/book' element={<Book />}></Route>
+        <Route path='/list' element={<List />}></Route>
+        <Route path='/detailpage' element={<DetailPage />}></Route>
   {/* <Route path='*' element={<Error />}/> */}
   </Routes>
   </div>
@@ -30,11 +32,11 @@ const App = () => {
 
 // function App() {
 
-//   useEffect(() => {
-//     const test = firestore.collection("test");
+  // useEffect(() => {
+  //   const test = firestore.collection("test");
     
-//     test.doc("hi").set({test: 'hello'});
-//   });
+  //   test.doc("hi").set({test: 'hello'});
+  // });
 
 //   return (
 //     <div className="App">
