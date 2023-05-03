@@ -9,4 +9,21 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="day">day</string>
+    <string name="time">time</string>
+    <string name="add_column">Add Column</string>
+    <string name="daytime">day%dtime%d</string>
+    <string name="tabletime">%d~%d</string>
+    <string name="timetable">시간표</string>
+    <string name="date">%d일차</string>
+    <string name="menu_home">홈</string>
+    <string name="menu_timetable">시간표</string>
+    <string name="monday">월요일</string>
+    <string name="tuesday">화요일</string>
+    <string name="wednesday">수요일</string>
+    <string name="thursday">목요일</string>
+    <string name="friday">금요일</string>
+    <string name="saturday">토요일</string>
+    <string name="sunday">일요일</string>
+
 </resources>

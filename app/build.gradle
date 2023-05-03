@@ -51,4 +51,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
 
     implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation "androidx.gridlayout:gridlayout:1.0.0"
 }

@@ -2,15 +2,14 @@ package com.example.capstone
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import android.content.Intent
 import androidx.databinding.DataBindingUtil
 import android.util.Log
-import android.widget.Button
-import android.widget.Toast
+import android.widget.*
 import com.example.capstone.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -31,5 +30,24 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             this?.finish()
         }
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
+        bottomNavigationView.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_home -> {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_timetable -> {
+                    val intent = Intent(this, TimeTableActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                else -> false
+            }
+        }
+
+
     }
 }
