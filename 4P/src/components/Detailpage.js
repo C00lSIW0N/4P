@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { firestore } from "../firebase_config";
 
 const Detailpage = () => {
 
@@ -7,8 +8,8 @@ const Detailpage = () => {
     window.location.href = 'list'
  }
  const GotoPayment = () => {
-    window.location.href = 'payment'
- } 
+      window.location.href = 'payment'
+   }
  return(
     <>
     <h1>상세 페이지</h1>
