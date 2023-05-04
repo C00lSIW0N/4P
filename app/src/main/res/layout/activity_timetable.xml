@@ -16,66 +16,78 @@
             android:layout_height="match_parent"
             android:background="#7bbfea">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/timetable"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:background="#7bbfea"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/monday"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:background="#7bbfea"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/tuesday"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:background="#7bbfea"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/wednesday"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:background="#7bbfea"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/thursday"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:background="#7bbfea"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/friday"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:background="#7bbfea"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,56 +95,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="9~10"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -140,56 +165,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="10~11"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -197,56 +235,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="11~12"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -254,56 +305,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="12~13"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -311,56 +375,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="13~14"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -368,56 +445,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="14~15"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -425,56 +515,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="15~16"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -482,56 +585,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="16~17"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -539,56 +655,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="17~18"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -596,56 +725,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="18~19"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -653,56 +795,69 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="19~20"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/time20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -710,61 +865,85 @@
                 android:background="#7bbfea"
                 android:textColor="@color/white"
                 android:text="20~21"
-                android:textSize="20sp" />
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/monday20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tuesday20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/wednesday20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/thursday20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="#f0f8ff"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/friday20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#ffffff"
                 android:text="-"
-                android:textSize="20sp" />
+                android:textColor="#7bbfea"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
         </TableRow>
 
     </TableLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/add_schedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#3F51B5"
+        android:background="#0066CC"
         android:text="일정 추가하기"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_allschedules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0066CC"
+        android:text="일정 전체삭제"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
 
