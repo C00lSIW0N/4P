@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/previous_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="여기엔 요일이랑 시간 넣을거야"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/reschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일정 이름 수정"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/reschedule_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="일정의 이름" />
+
+
+
+        <Button
+            android:id="@+id/reschedule_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일정 수정" />
+
+        <Button
+            android:id="@+id/delete_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일정 삭제" />
+
+        <Button
+            android:id="@+id/cancel_reschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
