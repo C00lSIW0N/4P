@@ -32,27 +32,27 @@
 
         <CheckBox
             android:id="@+id/monday"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/monday" />
         <CheckBox
             android:id="@+id/tuesday"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tuesday" />
         <CheckBox
             android:id="@+id/wednesday"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/wednesday" />
         <CheckBox
             android:id="@+id/thursday"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/thursday" />
         <CheckBox
             android:id="@+id/friday"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/friday" />
 
@@ -66,9 +66,9 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="4"
+            android:columnCount="7"
             android:orientation="horizontal"
-            android:rowCount="3"
+            android:rowCount="2"
             app:layout_constraintTop_toTopOf="parent">
 
             <CheckBox
@@ -142,6 +142,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8" />
+
+            <CheckBox
+                android:id="@+id/timeselect_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9" />
         </GridLayout>
 
         <Button

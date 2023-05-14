@@ -13,6 +13,7 @@ import androidx.databinding.DataBindingUtil
 import android.util.Log
 import android.view.Gravity
 import android.view.View
+import android.view.WindowManager
 import android.widget.*
 import com.example.capstone.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -117,7 +118,7 @@ class TimeTableActivity : AppCompatActivity() {
             var reschedulename = "-"
             val rescheduleconfirmbutton = dialog.findViewById<Button>(R.id.reschedule_confirm)
             val deleteschedulebutton = dialog.findViewById<Button>(R.id.delete_schedule)
-            val cancel_reschedule = dialog.findViewById<Button>(R.id.delete_schedule)
+            val cancelreschedule = dialog.findViewById<Button>(R.id.cancel_reschedule)
 
             previous_day.text = day + ", " + time + "의 일정 수정"
 
@@ -139,20 +140,25 @@ class TimeTableActivity : AppCompatActivity() {
                     textcolorcode = "#7bbfea"
                     button.setBackgroundColor(Color.WHITE)
                 }
+                else if (reschedulename == "") {
+                    dialog.dismiss()
+                }
                 button.setTextColor(Color.parseColor(textcolorcode))
                 dialog.dismiss()
             }
 
             deleteschedulebutton.setOnClickListener {
-                /*var textcolorcode = "#7bbfea"
-                button.text = "-"
+                var textcolorcode = "#7bbfea"
                 button.setBackgroundColor(Color.WHITE)
-                button.setTextColor(Color.parseColor(textcolorcode))*/
-                initplan(button)
+                button.text = "-"
+                button.setTextColor(Color.parseColor(textcolorcode))
+                // initplan(button)
                 dialog.dismiss()
             }
 
-            cancel_reschedule.setOnClickListener {dialog.dismiss()}
+            cancelreschedule.setOnClickListener {
+                dialog.dismiss()
+            }
             dialog.show()
         }
 
@@ -221,12 +227,19 @@ class TimeTableActivity : AppCompatActivity() {
         friday18= findViewById<Button>(R.id.friday18)
         friday19 = findViewById<Button>(R.id.friday19)
         friday20 = findViewById<Button>(R.id.friday20)
-        // 시간표를 전부 버튼으로 바꿔서... 그것도 해둬야함... (버튼 클릭하면 그 시간의 일정 수정/삭제할 수 있게...)
+        // 시간표를 전부 버튼으로 바꿔서... 그것도 해둬야함... (버튼 클릭하면 그 시간의 일정 수정/삭제할 수 있게...)/ 완료함
 
         // 일정 추가 버튼 다이얼로그
         addSchedule.setOnClickListener {
             val dialog = Dialog(this)
             dialog.setContentView(R.layout.dialog_addschedule)
+
+            /*
+            dialog.window?.setLayout(
+                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.WRAP_CONTENT
+            )
+            */
 
             val schedulenameid = dialog.findViewById<EditText>(R.id.select_name)
             var schedulename = ""
@@ -253,10 +266,11 @@ class TimeTableActivity : AppCompatActivity() {
             val timeselect_18 = dialog.findViewById<CheckBox>(R.id.timeselect_18)
             val timeselect_19 = dialog.findViewById<CheckBox>(R.id.timeselect_19)
             val timeselect_20 = dialog.findViewById<CheckBox>(R.id.timeselect_20)
+            val timeselect_21 = dialog.findViewById<CheckBox>(R.id.timeselect_21)
 
             var checkedCount = 0 // 선택된 체크박스 개수, 2개 이상 선택 못하도록 막을 거...
 
-            val timeselect = IntArray(12)
+            val timeselect = IntArray(13)
             val dayselect = IntArray(5)
 
             var starttime = -1
@@ -464,6 +478,20 @@ class TimeTableActivity : AppCompatActivity() {
                     timeselect[11] = 0
                 }
             }
+            timeselect_21.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    checkedCount++
+                    timeselect[12] = 1
+                    if (checkedCount > 2) {
+                        timeselect_21.isChecked = false // 선택 취소
+                        checkedCount--
+                        timeselect[12] = 0
+                    }
+                } else {
+                    checkedCount--
+                    timeselect[12] = 0
+                }
+            }
 
             // fix 버튼 눌렀을 때 쓰일 함수... 백그라운드 색 글자색 바꾸는 거........
             fun changebutton(button: Button, schedulename: String) {
@@ -475,13 +503,13 @@ class TimeTableActivity : AppCompatActivity() {
 
             fixbutton.setOnClickListener {
                 // 여기에다간... 적용하는 거 쓰기... 아마 가기 전까지 못함...
-                for (i in 0..11) {
+                for (i in 0..12) {
                     if (timeselect[i] == 1) {
                         starttime = i
                         break
                     }
                 }
-                for (i in (starttime+1)..11) {
+                for (i in (starttime+1)..12) {
                     if (timeselect[i] == 1) {
                         finishtime = i
                         break
@@ -580,6 +608,7 @@ class TimeTableActivity : AppCompatActivity() {
                 }
             }
             cancelbutton.setOnClickListener {dialog.dismiss()}
+
             dialog.show()
         }
         // 일정 전체 삭제 버튼 다이얼로그
