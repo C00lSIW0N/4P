@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -31,20 +32,6 @@
             android:layout_height="wrap_content"
             android:text="시간표에 등록하시겠습니까?"
             android:textSize="16sp" />
-
-        <!--
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/autoschedule_confirm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="예" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/cancel_autoschedule"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="아니오" />
-            -->
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -105,16 +105,16 @@ class TimeTableActivity : AppCompatActivity() {
 
         fun initplan(button: Button) {
             var textcolorcode = "#bbbbbb"
-            button.text = "-"
+            button.text = " "
             button.textSize = 16f
-            button.setBackgroundColor(Color.WHITE)
+            button.setBackgroundResource(R.drawable.timetable_cell)
             button.setTextColor(Color.parseColor(textcolorcode))
         }
 
         // 버튼 백그라운드 색 글자색 바꾸는 함수
         fun changebutton(button: Button, schedulename: String, color: Int) {
             // color가 0이면 월욜, 1이면 화욜... 4이면 금욜
-            if (schedulename != "-") {
+            if (schedulename != " ") {
                 var colorcode = "#000000"
                 val length = schedulename.length
 
@@ -350,7 +350,7 @@ class TimeTableActivity : AppCompatActivity() {
                                             val data1 = documentSnapshot.data
                                             previous_name = data1!![daytime] as String
 
-                                            if (previous_name == "-") { autoschedule_previous.text = "이 시간의 일정이 없습니다." }
+                                            if (previous_name == " ") { autoschedule_previous.text = "이 시간의 일정이 없습니다." }
                                             else { autoschedule_previous.text = "이 시간의 일정: " + previous_name }
                                         }
                                     } else {
@@ -449,7 +449,7 @@ class TimeTableActivity : AppCompatActivity() {
             val previous_day = dialog.findViewById<TextView>(R.id.previous_day)
             val reschedulenameid = dialog.findViewById<EditText>(R.id.reschedule_name)
             reschedulenameid.hint = button.text
-            var reschedulename = "-"
+            var reschedulename = " "
             val rescheduleconfirmbutton = dialog.findViewById<Button>(R.id.reschedule_confirm)
             val deleteschedulebutton = dialog.findViewById<Button>(R.id.delete_schedule)
             val cancelreschedule = dialog.findViewById<Button>(R.id.cancel_reschedule)
@@ -473,8 +473,8 @@ class TimeTableActivity : AppCompatActivity() {
             })
 
             rescheduleconfirmbutton.setOnClickListener  {
-                if (reschedulename == "-") { initplan(button) }
-                else if (reschedulename == "" || reschedulename == null) { dialog.dismiss() }
+                if (reschedulename == " ") { initplan(button) }
+                else if (reschedulename == "") { dialog.dismiss() }
                 else { changebutton(button, reschedulename, color) }
 
                 userDocument.update(tempName, reschedulename)
@@ -484,7 +484,7 @@ class TimeTableActivity : AppCompatActivity() {
 
             deleteschedulebutton.setOnClickListener { 
                 initplan(button)
-                userDocument.update(tempName, "-")
+                userDocument.update(tempName, " ")
                 dialog.dismiss()
             }
 
@@ -767,7 +767,7 @@ class TimeTableActivity : AppCompatActivity() {
                     }
                 }
 
-                if ((schedulename != "" || schedulename != "-") && dayCount > 0 && starttime != -1 && finishtime != -1) {
+                if ((schedulename != "" || schedulename != " ") && dayCount > 0 && starttime != -1 && finishtime != -1) {
                     starttime += 9
                     finishtime += 8
                     // 요일 먼저 for문으로 돌리면서 시간 지정하기
@@ -850,7 +850,7 @@ class TimeTableActivity : AppCompatActivity() {
                     dialog.dismiss()
                 }
                 else {
-                    if (schedulename == "" || schedulename == "-")
+                    if (schedulename == "" || schedulename == " ")
                         Toast.makeText(this, "일정 이름을 입력해 주세요.", Toast.LENGTH_SHORT).show()
                     else if (dayCount == 0)
                         Toast.makeText(this, "요일을 선택해 주세요.", Toast.LENGTH_SHORT).show()
@@ -883,11 +883,11 @@ class TimeTableActivity : AppCompatActivity() {
                 initplan(friday9); initplan(friday10); initplan(friday11); initplan(friday12); initplan(friday13); initplan(friday14); initplan(friday15); initplan(friday16); initplan(friday17); initplan(friday18); initplan(friday19); initplan(friday20)
 
                 val updates = hashMapOf<String, Any>(
-                    "monday9" to "-", "monday10" to "-", "monday11" to "-", "monday12" to "-", "monday13" to "-", "monday14" to "-", "monday15" to "-", "monday16" to "-", "monday17" to "-", "monday18" to "-", "monday19" to "-", "monday20" to "-",
-                    "tuesday9" to "-", "tuesday10" to "-", "tuesday11" to "-", "tuesday12" to "-", "tuesday13" to "-", "tuesday14" to "-", "tuesday15" to "-", "tuesday16" to "-", "tuesday17" to "-", "tuesday18" to "-", "tuesday19" to "-", "tuesday20" to "-",
-                    "wednesday9" to "-", "wednesday10" to "-", "wednesday11" to "-", "wednesday12" to "-", "wednesday13" to "-", "wednesday14" to "-", "wednesday15" to "-", "wednesday16" to "-", "wednesday17" to "-", "wednesday18" to "-", "wednesday19" to "-", "wednesday20" to "-",
-                    "thursday9" to "-", "thursday10" to "-", "thursday11" to "-", "thursday12" to "-", "thursday13" to "-", "thursday14" to "-", "thursday15" to "-", "thursday16" to "-", "thursday17" to "-", "thursday18" to "-", "thursday19" to "-", "thursday20" to "-",
-                    "friday9" to "-", "friday10" to "-", "friday11" to "-", "friday12" to "-", "friday13" to "-", "friday14" to "-", "friday15" to "-", "friday16" to "-", "friday17" to "-", "friday18" to "-", "friday19" to "-", "friday20" to "-"
+                    "monday9" to " ", "monday10" to " ", "monday11" to " ", "monday12" to " ", "monday13" to " ", "monday14" to " ", "monday15" to " ", "monday16" to " ", "monday17" to " ", "monday18" to " ", "monday19" to " ", "monday20" to " ",
+                    "tuesday9" to " ", "tuesday10" to " ", "tuesday11" to " ", "tuesday12" to " ", "tuesday13" to " ", "tuesday14" to " ", "tuesday15" to " ", "tuesday16" to " ", "tuesday17" to " ", "tuesday18" to " ", "tuesday19" to " ", "tuesday20" to " ",
+                    "wednesday9" to " ", "wednesday10" to " ", "wednesday11" to " ", "wednesday12" to " ", "wednesday13" to " ", "wednesday14" to " ", "wednesday15" to " ", "wednesday16" to " ", "wednesday17" to " ", "wednesday18" to " ", "wednesday19" to " ", "wednesday20" to " ",
+                    "thursday9" to " ", "thursday10" to " ", "thursday11" to " ", "thursday12" to " ", "thursday13" to " ", "thursday14" to " ", "thursday15" to " ", "thursday16" to " ", "thursday17" to " ", "thursday18" to " ", "thursday19" to " ", "thursday20" to " ",
+                    "friday9" to " ", "friday10" to " ", "friday11" to " ", "friday12" to " ", "friday13" to " ", "friday14" to " ", "friday15" to " ", "friday16" to " ", "friday17" to " ", "friday18" to " ", "friday19" to " ", "friday20" to " "
                 )
                 userDocument.update(updates)
 
