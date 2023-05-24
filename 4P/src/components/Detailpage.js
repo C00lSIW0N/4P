@@ -8,7 +8,11 @@ const Detailpage = () => {
     window.location.href = 'list'
  }
  const GotoPayment = () => {
-      window.location.href = 'payment'
+      // const sample = firestore.collection("숙소");
+      // sample.doc("호텔").set({호텔: "호텔1"}, {호텔: "호텔2"}, {호텔: "호텔3"}, {호텔: "호텔4"});
+      // sample.doc("펜션").set({펜션: "펜션1", 펜션: "펜션2", 펜션: "펜션3", 펜션: "펜션4"});
+      // sample.doc("게하").set({게하: "게하1", 게하: "게하2", 게하: "게하3", 게하: "게하4"});
+   window.location.href = 'payment'
    }
  return(
     <>

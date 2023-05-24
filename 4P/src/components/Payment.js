@@ -19,10 +19,12 @@
           }},
         []);
           const Pay_toss = () => {
-              const sample = firestore.collection("숙소");
-              sample.doc("호텔").set({호텔: "신라호텔"});
+            const sample1 = firestore.collection("user");;
+            sample1.doc("user1@user.com").set({숙소: "호텔1", 예약날짜: "friday11"});
+            sample1.doc("user2@user.com").set({숙소: "펜션1", 예약날짜: "monday14"});
+            sample1.doc("user3@user.com").set({숙소: "게하1", 예약날짜: "thursday18"});
             const { IMP } = window;
-            IMP.init('imp02656648');
+          IMP.init('imp02656648');
 
             const data = {
               pg: 'tosspay',
@@ -65,8 +67,8 @@
               IMP.request_pay(data,callback);
             }
           const Pay_kakao = () => {
-            const sample = firestore.collection("식당");
-            sample.doc("메뉴").set({식당: "아웃백"});
+            // const sample = firestore.collection("식당");
+            // sample.doc("메뉴").set({식당: "아웃백"});
             
             const { IMP } = window;
             IMP.init('imp02656648');
@@ -90,8 +92,8 @@
               IMP.request_pay(data,callback);
             }
           const Pay_payco = () => {
-            const sample = firestore.collection("비행기");
-            sample.doc("비행기").set({비행기: "대한항공"});
+            // const sample = firestore.collection("비행기");
+            // sample.doc("비행기").set({비행기: "대한항공"});
               const { IMP } = window;
               IMP.init('imp02656648');
           
