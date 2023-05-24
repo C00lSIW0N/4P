@@ -21,7 +21,8 @@
             android:id="@+id/select_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="일정의 이름" />
+            android:hint="일정의 이름"
+            android:maxLength="12" />
 
         <TextView
             android:id="@+id/schedule_day"
@@ -66,9 +67,9 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="7"
+            android:columnCount="5"
             android:orientation="horizontal"
-            android:rowCount="2"
+            android:rowCount="3"
             app:layout_constraintTop_toTopOf="parent">
 
             <CheckBox
@@ -150,17 +151,30 @@
                 android:text="9" />
         </GridLayout>
 
-        <Button
-            android:id="@+id/add_schedule_confirm"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="일정 추가" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/cancel_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="취소" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_schedule_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_blue"
+                android:text="일정 추가" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_red"
+                android:text="취소" />
+
+        </LinearLayout>
     </LinearLayout>
 
 

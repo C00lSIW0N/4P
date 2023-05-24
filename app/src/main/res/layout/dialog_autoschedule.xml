@@ -12,52 +12,64 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/previous_day"
+            android:id="@+id/autoschedule_nametime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="여기엔 요일이랑 시간 넣을거야"
-            android:textSize="20sp"
-            android:maxLength="12" />
+            android:text="여기엔 요일이랑 시간이랑 이름 넣을거야"
+            android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/reschedule_name"
+        <TextView
+            android:id="@+id/autoschedule_previous"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="일정의 이름"
-            android:maxLength="15" />
+            android:text="이 시간 일정 여부 넣기"
+            android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/ask_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시간표에 등록하시겠습니까?"
+            android:textSize="16sp" />
+
+        <!--
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/autoschedule_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="예" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_autoschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아니오" />
+            -->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/reschedule_confirm"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#ffffff"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button_red"
-                android:text="일정 수정" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/delete_schedule"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#ffffff"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button_red"
-                android:text="일정 삭제" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/cancel_reschedule"
+                android:id="@+id/autoschedule_confirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#ffffff"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button_blue"
-                android:text="취소" />
+                android:text="예" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/autoschedule_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_red"
+                android:text="아니오" />
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
