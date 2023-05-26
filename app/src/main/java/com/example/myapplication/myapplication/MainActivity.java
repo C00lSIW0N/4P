@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         //okhttp
         messageList.add(new Message("...", Message.SENT_BY_BOT));
 
-        if (question.equals("돌")) {
+        if (question.equals("돌머리")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
             String websiteLink = "돌 정보입니다! \n http://10.0.2.2:3000 ";
             addResponse(websiteLink);
