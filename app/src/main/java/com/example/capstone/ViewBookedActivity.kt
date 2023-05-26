@@ -38,14 +38,18 @@ class ViewBookedActivity : AppCompatActivity() {
         bookDocument.get()
             .addOnSuccessListener { document ->
                 if (document != null && document.exists()) {
+                    for (i in 1..100) {
+                        val existcheck = document?.get("숙소"+i.toString()+"이름") as String?
+                        if (existcheck != null) {
+                            val name = document.getString("숙소"+i.toString()+"이름") ?: ""
+                            val category = "숙소"
+                            val daytime = document.getString("숙소"+i.toString()+"예약날짜") ?: ""
 
-                    val name = document.getString("숙소") ?: ""
-                    val category = document.getString("구분") ?: ""
-                    val daytime = document.getString("예약날짜") ?: ""
-
-                    val booked = Booked(name, category, daytime)
-                    dataList.add(booked)
-
+                            val booked = Booked(name, category, daytime)
+                            dataList.add(booked)
+                        }
+                        else { break }
+                    }
                     adapter = ViewBooked(dataList)
                     recyclerView.adapter = adapter
                 }
