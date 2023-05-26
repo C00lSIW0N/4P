@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (question.equals("돌")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "돌 정보입니다! \n https://www.google.com";
+            String websiteLink = "돌 정보입니다! \n http://10.0.2.2:3000 ";
             addResponse(websiteLink);
             return;
         }
