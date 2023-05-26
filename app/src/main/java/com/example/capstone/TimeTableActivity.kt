@@ -27,10 +27,13 @@ import android.view.inputmethod.InputMethodManager
 class TimeTableActivity : AppCompatActivity() {
     private lateinit var tableLayout: TableLayout
 
+    lateinit var auth:FirebaseAuth
+
     lateinit var addSchedule: Button
     lateinit var deleteAllSchedule: Button
     lateinit var viewBooked: Button
     lateinit var viewCart: Button
+    lateinit var logoutBtn: Button
 
     lateinit var monday9: Button
     lateinit var monday10: Button
@@ -105,8 +108,11 @@ class TimeTableActivity : AppCompatActivity() {
         deleteAllSchedule = findViewById(R.id.delete_allschedules)
         viewBooked = findViewById(R.id.viewbooked)
         viewCart = findViewById(R.id.viewCart)
+        logoutBtn = findViewById(R.id.logoutBtn)
 
         tableLayout = findViewById(R.id.tableLayout)
+
+        auth = FirebaseAuth.getInstance()
 
         fun initplan(button: Button) {
             var textcolorcode = "#bbbbbb"
@@ -924,6 +930,16 @@ class TimeTableActivity : AppCompatActivity() {
             deleteall_cancel.setOnClickListener { dialog.dismiss() }
 
             dialog.show()
+        }
+
+        // 로그아웃 버튼
+        logoutBtn.setOnClickListener {
+            //firebase auth에서 sign out 기능 호출
+            auth.signOut()
+            Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show()
+            var intent=Intent(this,LoginActivity::class.java) //로그인 페이지 이동
+            startActivity(intent)
+            this?.finish()
         }
 
         // 각 버튼 별 시간표 일정 수정/삭제 버튼
