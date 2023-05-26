@@ -1,73 +1,116 @@
-/* body {
-  background-color: #BDB76B
+ body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.fc-header-toolbar {
-  font-family: "diary";
-  color:#CA5E59;
+.App {
+  width: 100%;
+  max-width: 1300px; /* 가로 사이즈를 조정할 수 있는 값으로 변경해보세요 */
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.mainPage {
-  background-color: #BDB76B;
-  text-align: center;
-  font-family: "diary";
-  font-size: large;
-  height: 100vw;
-  width: 100vw;
+
+/*카드배열*/
+.card-row {
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.goHome {
-  background-color: #BDB76B;
-  text-align: center;
-  font-family: "diary";
-  font-size: large;
-  height: 100vw;
-  width: 100vw;
+.card-column {
+  flex-basis: calc(25% - 10px); /* 카드 컬럼의 너비를 조정 */
+  padding: 15px;
 }
 
-.fc-day-sun a {
-  color: #CA5E59;
-  text-decoration: none;
+
+
+/*상세페이지*/
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
 
-.fc-day-sat a {
-  color: #F15B5B;
-  text-decoration: none;
+.image-container {
+  width: 200%;
+  height: 0;
+  padding-bottom: 66.67%; /* 세로 비율을 2:3으로 조정 */
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000; /* 테두리 추가 */
 }
 
-.fc td {
-  background: #FFFFF0;
-  color: #FFFFF0;
-  font-family: "diary";
+
+.info-container {
+  width: 100%;
+  height: calc(50% - 20px); /* 사진 가로 길이의 절반 */
+  position: relative;
+  border: 1px solid #000; /* 테두리 추가 */
 }
 
-.fc-day-mon a {
-  color: black;
+
+.price-container {
+  float: right; /* 사진과 상세 정보 컨테이너 오른쪽에 배치 */
+  margin-top: 20px; /* 사진 아래 여백 추가 */
+  border: 1px solid #000; /* 가격 컨테이너에 테두리 추가 */
 }
 
-.fc-day-wed a {
-  color: black;
+.payment-container {
+  text-align: center; /* 가운데 정렬 유지 */
+  margin-top: 20px; /* 사진과 가격 컨테이너 아래 여백 추가 */
 }
 
-.fc-day-tue a {
-  color: black;
+
+.payment-button {
+  background-color: #b2dfdb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.fc-day-fri a {
-  color: black;
+.payment-button:hover {
+  background-color: #795548;
 }
 
-.fc-day-thu a {
-  color: black;
+
+
+/*상세페이지 image 슬라이드*/
+.sliding-image {
+  transition: transform 0.5s ease; /* 이미지 전환에 대한 트랜지션 효과 추가 */
 }
 
-.fc-event {
-  background: OliveDrab;
-  font-family: "diary";
+.image-container {
+  overflow: hidden; /* 이미지가 넘칠 경우를 대비하여 컨테이너를 숨김 */
 }
 
-@font-face {
-  font-family: "diary";
-  src: url("../fonts/EF_Diary.ttf");
+
+
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* 원하는 세로 비율(가로에 대한 비율)을 설정하세요 */
+  overflow: hidden;
 }
- */
+
+.image-container .sliding-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 이미지를 비율을 유지하며 컨테이너에 맞게 표시합니다 */
+}
+
+

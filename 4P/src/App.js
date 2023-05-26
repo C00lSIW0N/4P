@@ -1,75 +1,28 @@
-// import NavPage from "./components/NavPage";
-// import { Route, Routes } from "react-router-dom";
-//  import Main from './components/MainPage';
-// import { getFirestore } from "./firebase_config.js";
-// import { useEffect } from "react";
-
-// const App = () => {
-//   // useEffect(()=> {
-//   //   console.log(getFirestore);
-//   // })
-//   // return(
-//   //   <div className="App">
-//   //     firebase 확인해보기!
-//   //   </div>
-//   <Routes>
-//   <Route path='/' element={<Main />}/>
-//   <Route path='/main' element={<Main />}/>
-//   {/* <Route path='*' element={<Error />}/> */}
-// </Routes>
-//   // );
-//   // );
-//   };
-// export default App;
-
-// import './App.css';
-/*import { firestore } from './firebase_config';
-import { useEffect } from 'react';
-
-function App() {
-
-  useEffect(() => {
-    const test = firestore.collection("test");
-    
-    test.doc("hi").set({test: 'hello'});
-  });
-
-  return (
-    <div className="App">
-      firebase 확인해보기!
-    </div>
-  );
-}
-
-export default App;
-*/
-
+import { Route, Routes } from "react-router-dom";
+import Main from './components/Main';
+import { getFirestore } from "./firebase_config.js";
+import { useEffect } from "react";
+import Title from "./components/Title";
+import Payment from "./components/Payment";
+import List from "./components/List";
+import DetailPage from "./components/Detailpage";
+// import Login from "./components/Login";
 import "./App.css";
-import React from "react";
-//import { RecoilRoot } from "recoil";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import EyTitle from "./components/EyTitle";
-import ReMainPage from "./pages/ReMainPage";
-import ReservationPage from "./pages/ReservationPage";
-import CancellationPage from "./pages/CancellationPage";
-import ConfirmationPage from "./pages/ConfirmationPage";
 
 
-function App() {
-  return (
+const App = () => {
+  return(
     <div className="App">
-      <EyTitle />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ReMainPage/>} />  
-          <Route path="/remain" element={<ReMainPage/>} />
-          <Route path="/reservation" element={<ReservationPage/>}/>
-          <Route path="/confirmation" element={<ConfirmationPage/>}/>
-          <Route path="/cancellation" element={<CancellationPage/>}/>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  )
-}
-
-export default App;
+      <div style={{ height: '30px' }}></div>
+      <Title/>
+      <div style={{ height: '50px' }}></div> {/* Title과 Main 사이의 여백 */}
+      <Routes>
+        <Route path='/' element={<Main />}></Route>
+        <Route path='/payment' element={<Payment />}></Route>
+        <Route path='/list' element={<List />}></Route>
+        <Route path='/detailpage' element={<DetailPage />}></Route>
+  </Routes>
+  </div>
+  );
+};
+  export default App;

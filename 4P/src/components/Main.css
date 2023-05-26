@@ -1,0 +1,13 @@
+.container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .row {
+    margin-bottom: 15px;
+  }
+  
+  .col {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
