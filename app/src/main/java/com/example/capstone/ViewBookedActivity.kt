@@ -48,7 +48,6 @@ class ViewBookedActivity : AppCompatActivity() {
                             val booked = Booked(name, category, daytime)
                             dataList.add(booked)
                         }
-                        else { break }
                     }
                     adapter = ViewBooked(dataList)
                     recyclerView.adapter = adapter

@@ -1,24 +1,15 @@
 package com.example.capstone
 
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import androidx.databinding.DataBindingUtil
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
-import android.content.Intent
-import android.view.MotionEvent
-import android.view.View
 import android.widget.Toast
-import com.example.capstone.databinding.ActivityLoginBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.firestore
-import android.view.inputmethod.InputMethodManager
 
-class LoginActivity : AppCompatActivity() {
+ class LoginActivity : AppCompatActivity() {
     lateinit var emailEt: EditText
     lateinit var passwordEt: EditText
     lateinit var loginBtn: Button
@@ -37,17 +28,46 @@ class LoginActivity : AppCompatActivity() {
         loginBtn = findViewById<Button>(R.id.loginBtn)
         joinBtn = findViewById<Button>(R.id.joinBtn)
 
-        loginBtn.setOnClickListener {
-            var email = emailEt.text.toString()
-            var password = passwordEt.text.toString()
-            auth.signInWithEmailAndPassword(email, password) // 로그인
+        var sharedPreferences = getSharedPreferences("MyAppPreferences", MODE_PRIVATE)
+
+        val userid = sharedPreferences.getString("userid", "")
+        val userpw = sharedPreferences.getString("userpw", "")
+
+        if (!userid.isNullOrEmpty() && !userpw.isNullOrEmpty()) {
+            auth.signInWithEmailAndPassword(userid.toString(), userpw.toString()) // 로그인
                 .addOnCompleteListener { result ->
                     if (result.isSuccessful) {
-                        Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
+                        // 자동로그인 성공
+                        Toast.makeText(this, "자동 로그인 성공", Toast.LENGTH_SHORT).show()
                         var intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     }
+                    else {
+                        Toast.makeText(this, "자동 로그인 실패", Toast.LENGTH_SHORT).show()
+                        //onCreate(null)
+                        finish()
+                    }
                 }
+        }
+        else {
+            loginBtn.setOnClickListener {
+                var email = emailEt.text.toString()
+                var password = passwordEt.text.toString()
+                auth.signInWithEmailAndPassword(email, password) // 로그인
+                    .addOnCompleteListener { result ->
+                        if (result.isSuccessful) {
+                            // 자동로그인 정보 저장
+                            val editor = sharedPreferences.edit()
+                            editor.putString("userid", email)
+                            editor.putString("userpw", password)
+                            editor.apply()
+
+                            Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
+                            var intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                        }
+                    }
+            }
         }
 
         joinBtn.setOnClickListener {

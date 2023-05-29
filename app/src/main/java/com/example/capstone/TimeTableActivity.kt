@@ -1,13 +1,12 @@
 package com.example.capstone
 
 import android.app.Dialog
-import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.MotionEvent
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
@@ -20,8 +19,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import org.w3c.dom.Text
-import android.view.inputmethod.InputMethodManager
 
 
 class TimeTableActivity : AppCompatActivity() {
@@ -458,7 +455,6 @@ class TimeTableActivity : AppCompatActivity() {
                                 bookDocument.update("숙소"+i.toString()+"체크", "1")
                             }
                         }
-                        else { break }
                     }
                 }
             }
@@ -934,6 +930,14 @@ class TimeTableActivity : AppCompatActivity() {
 
         // 로그아웃 버튼
         logoutBtn.setOnClickListener {
+            var sharedPreferences = getSharedPreferences("MyAppPreferences", MODE_PRIVATE)
+
+            // 자동로그인 기능 끄기
+            val editor: SharedPreferences.Editor = sharedPreferences.edit()
+            editor.remove("userid")
+            editor.remove("userpw")
+            editor.apply()
+
             //firebase auth에서 sign out 기능 호출
             auth.signOut()
             Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show()
