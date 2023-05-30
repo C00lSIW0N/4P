@@ -27,7 +27,8 @@ function CardA() {
   };
 
   const cardTitle = "제주 신라호텔";
-  const cardText = "화사한 아침에 #모닝밀\n5월~6월 전객실 혜택 #풀장 #힐링\n우리만의 자유로운 나인티스키치 우리만의 자유로운";
+  const priceText = "229,000원~457,000원";
+  const cardText = `${priceText}\n화사한 아침에 #모닝밀\n5월~6월 전객실 혜택 #풀장 #힐링`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");
