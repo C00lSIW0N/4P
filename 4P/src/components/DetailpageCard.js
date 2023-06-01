@@ -1,13 +1,14 @@
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
-import sampleA from '../images/sampleA.jpg';
-import sampleAa from '../images/sampleAa.jpg';
-import sampleAaa from '../images/sampleAaa.jpg';
+import sampleB from '../images/sampleB.jpg';
+import sampleBb from '../images/sampleBb.jpg';
+import sampleBbb from '../images/sampleBbb.jpg';
 
-function PaymentCard() {
+function DetailpageCard() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [sampleA, sampleAa, sampleAaa]; // 사진 배열
+  const images = [sampleB, sampleBb, sampleBbb]; // 사진 배열
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,9 +29,10 @@ function PaymentCard() {
   const truncatedText = textLines.join("\n");
   const isTruncated = textLines.length < cardText.split("\n").length;
 
+
   return (
     <Card style={{ width: '50rem', height: '50rem' }}>
-        <div style={{ height: '10cm', overflow: 'hidden' }}>
+      <div style={{ height: '10cm', overflow: 'hidden' }}>
           <Card.Img
             variant="top"
             src={images[currentImageIndex]} // 현재 인덱스에 해당하는 사진 표시
@@ -39,13 +41,13 @@ function PaymentCard() {
         </div>
       <Card.Body>
         <Card.Title
-          style={{
+        style={{
             fontWeight: "bold",
             color: "black",
             textDecoration: "none",
             fontSize: "36px" // 원하는 크기로 조정해주세요
           }}
-        >
+          >
           {cardTitle}
         </Card.Title>
         <Card.Text
@@ -63,8 +65,17 @@ function PaymentCard() {
           {isTruncated && "..."}
         </Card.Text>
       </Card.Body>
+      <ListGroup className="list-group-flush">
+        <ListGroup.Item>Cras justo odio</ListGroup.Item>
+        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+      </ListGroup>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
     </Card>
   );
 }
 
-export default PaymentCard;
+export default DetailpageCard;

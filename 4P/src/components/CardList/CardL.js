@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import sampleL from '../../images/sampleL.jpg';
 import greyheart from '../../images/greyheart.png';
 import pinkheart from '../../images/pinkheart.png';
+import { firestore } from "../../firebase_config";
 
 function CardL() {
   const [isLiked, setIsLiked] = useState(false);

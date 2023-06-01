@@ -300,6 +300,7 @@ const Payment = () => {
       <div className="payment-card-container">
         <PaymentCardA />
       </div>
+    </div>
       <br />
       <div className="button-container">
       <button style={{ border: "none", background: "none" }} onClick={Pay_toss}>
@@ -322,7 +323,6 @@ const Payment = () => {
       <br />
       </button>
       </div>
-    </div>
     </>
   );
 };
