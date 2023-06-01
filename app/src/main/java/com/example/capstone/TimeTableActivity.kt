@@ -1,6 +1,9 @@
 package com.example.capstone
 
+import android.app.AlarmManager
 import android.app.Dialog
+import android.app.PendingIntent
+import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Color
@@ -19,6 +22,13 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.util.Calendar
+import android.os.Build
+import androidx.core.app.NotificationManagerCompat
+import android.provider.Settings
+import android.Manifest
+import android.Manifest.permission
+
 
 
 class TimeTableActivity : AppCompatActivity() {
@@ -27,10 +37,10 @@ class TimeTableActivity : AppCompatActivity() {
     lateinit var auth:FirebaseAuth
 
     lateinit var addSchedule: Button
-    lateinit var deleteAllSchedule: Button
     lateinit var viewBooked: Button
     lateinit var viewCart: Button
     lateinit var logoutBtn: Button
+    lateinit var alarmBtn: Button
 
     lateinit var monday9: Button
     lateinit var monday10: Button
@@ -102,10 +112,10 @@ class TimeTableActivity : AppCompatActivity() {
         setContentView(R.layout.activity_timetable)
 
         addSchedule = findViewById(R.id.add_schedule)
-        deleteAllSchedule = findViewById(R.id.delete_allschedules)
         viewBooked = findViewById(R.id.viewbooked)
         viewCart = findViewById(R.id.viewCart)
         logoutBtn = findViewById(R.id.logoutBtn)
+        alarmBtn = findViewById(R.id.alarmBtn)
 
         tableLayout = findViewById(R.id.tableLayout)
 
@@ -529,6 +539,7 @@ class TimeTableActivity : AppCompatActivity() {
             var schedulename = ""
             val fixbutton = dialog.findViewById<Button>(R.id.add_schedule_confirm)
             val cancelbutton = dialog.findViewById<Button>(R.id.cancel_button)
+            val deleteallschedules = dialog.findViewById<Button>(R.id.delete_allschedules)
 
             // 요일 변수들 체크박스로 바꾼 버전
             val dayselect_mon = dialog.findViewById<CheckBox>(R.id.monday)
@@ -778,6 +789,36 @@ class TimeTableActivity : AppCompatActivity() {
                 }
             }
 
+            deleteallschedules.setOnClickListener {
+                val dialog = Dialog(this)
+                dialog.setContentView(R.layout.dialog_deleteallschedules)
+
+                val deleteall_confirm = dialog.findViewById<Button>(R.id.deleteall_confirm)
+                val deleteall_cancel = dialog.findViewById<Button>(R.id.deleteall_cancel)
+
+                deleteall_confirm.setOnClickListener  {
+                    initplan(monday9); initplan(monday10); initplan(monday11); initplan(monday12); initplan(monday13); initplan(monday14); initplan(monday15); initplan(monday16); initplan(monday17); initplan(monday18); initplan(monday19); initplan(monday20)
+                    initplan(tuesday9); initplan(tuesday10); initplan(tuesday11); initplan(tuesday12); initplan(tuesday13); initplan(tuesday14); initplan(tuesday15); initplan(tuesday16); initplan(tuesday17); initplan(tuesday18); initplan(tuesday19); initplan(tuesday20)
+                    initplan(wednesday9); initplan(wednesday10); initplan(wednesday11); initplan(wednesday12); initplan(wednesday13); initplan(wednesday14); initplan(wednesday15); initplan(wednesday16); initplan(wednesday17); initplan(wednesday18); initplan(wednesday19); initplan(wednesday20)
+                    initplan(thursday9); initplan(thursday10); initplan(thursday11); initplan(thursday12); initplan(thursday13); initplan(thursday14); initplan(thursday15); initplan(thursday16); initplan(thursday17); initplan(thursday18); initplan(thursday19); initplan(thursday20)
+                    initplan(friday9); initplan(friday10); initplan(friday11); initplan(friday12); initplan(friday13); initplan(friday14); initplan(friday15); initplan(friday16); initplan(friday17); initplan(friday18); initplan(friday19); initplan(friday20)
+
+                    val updates = hashMapOf<String, Any>(
+                        "monday9" to " ", "monday10" to " ", "monday11" to " ", "monday12" to " ", "monday13" to " ", "monday14" to " ", "monday15" to " ", "monday16" to " ", "monday17" to " ", "monday18" to " ", "monday19" to " ", "monday20" to " ",
+                        "tuesday9" to " ", "tuesday10" to " ", "tuesday11" to " ", "tuesday12" to " ", "tuesday13" to " ", "tuesday14" to " ", "tuesday15" to " ", "tuesday16" to " ", "tuesday17" to " ", "tuesday18" to " ", "tuesday19" to " ", "tuesday20" to " ",
+                        "wednesday9" to " ", "wednesday10" to " ", "wednesday11" to " ", "wednesday12" to " ", "wednesday13" to " ", "wednesday14" to " ", "wednesday15" to " ", "wednesday16" to " ", "wednesday17" to " ", "wednesday18" to " ", "wednesday19" to " ", "wednesday20" to " ",
+                        "thursday9" to " ", "thursday10" to " ", "thursday11" to " ", "thursday12" to " ", "thursday13" to " ", "thursday14" to " ", "thursday15" to " ", "thursday16" to " ", "thursday17" to " ", "thursday18" to " ", "thursday19" to " ", "thursday20" to " ",
+                        "friday9" to " ", "friday10" to " ", "friday11" to " ", "friday12" to " ", "friday13" to " ", "friday14" to " ", "friday15" to " ", "friday16" to " ", "friday17" to " ", "friday18" to " ", "friday19" to " ", "friday20" to " "
+                    )
+                    userDocument.update(updates)
+
+                    Toast.makeText(this, "모든 일정이 삭제되었습니다.", Toast.LENGTH_SHORT).show()
+
+                    dialog.dismiss()
+                }
+                deleteall_cancel.setOnClickListener { dialog.dismiss() }
+                dialog.show()
+            }
             fixbutton.setOnClickListener {
                 for (i in 0..12) {
                     if (timeselect[i] == 1) {
@@ -904,40 +945,6 @@ class TimeTableActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // 일정 전체 삭제 버튼 다이얼로그
-        deleteAllSchedule.setOnClickListener {
-
-            val dialog = Dialog(this)
-            dialog.setContentView(R.layout.dialog_deleteallschedules)
-
-            val deleteall_confirm = dialog.findViewById<Button>(R.id.deleteall_confirm)
-            val deleteall_cancel = dialog.findViewById<Button>(R.id.deleteall_cancel)
-
-            deleteall_confirm.setOnClickListener  {
-                initplan(monday9); initplan(monday10); initplan(monday11); initplan(monday12); initplan(monday13); initplan(monday14); initplan(monday15); initplan(monday16); initplan(monday17); initplan(monday18); initplan(monday19); initplan(monday20)
-                initplan(tuesday9); initplan(tuesday10); initplan(tuesday11); initplan(tuesday12); initplan(tuesday13); initplan(tuesday14); initplan(tuesday15); initplan(tuesday16); initplan(tuesday17); initplan(tuesday18); initplan(tuesday19); initplan(tuesday20)
-                initplan(wednesday9); initplan(wednesday10); initplan(wednesday11); initplan(wednesday12); initplan(wednesday13); initplan(wednesday14); initplan(wednesday15); initplan(wednesday16); initplan(wednesday17); initplan(wednesday18); initplan(wednesday19); initplan(wednesday20)
-                initplan(thursday9); initplan(thursday10); initplan(thursday11); initplan(thursday12); initplan(thursday13); initplan(thursday14); initplan(thursday15); initplan(thursday16); initplan(thursday17); initplan(thursday18); initplan(thursday19); initplan(thursday20)
-                initplan(friday9); initplan(friday10); initplan(friday11); initplan(friday12); initplan(friday13); initplan(friday14); initplan(friday15); initplan(friday16); initplan(friday17); initplan(friday18); initplan(friday19); initplan(friday20)
-
-                val updates = hashMapOf<String, Any>(
-                    "monday9" to " ", "monday10" to " ", "monday11" to " ", "monday12" to " ", "monday13" to " ", "monday14" to " ", "monday15" to " ", "monday16" to " ", "monday17" to " ", "monday18" to " ", "monday19" to " ", "monday20" to " ",
-                    "tuesday9" to " ", "tuesday10" to " ", "tuesday11" to " ", "tuesday12" to " ", "tuesday13" to " ", "tuesday14" to " ", "tuesday15" to " ", "tuesday16" to " ", "tuesday17" to " ", "tuesday18" to " ", "tuesday19" to " ", "tuesday20" to " ",
-                    "wednesday9" to " ", "wednesday10" to " ", "wednesday11" to " ", "wednesday12" to " ", "wednesday13" to " ", "wednesday14" to " ", "wednesday15" to " ", "wednesday16" to " ", "wednesday17" to " ", "wednesday18" to " ", "wednesday19" to " ", "wednesday20" to " ",
-                    "thursday9" to " ", "thursday10" to " ", "thursday11" to " ", "thursday12" to " ", "thursday13" to " ", "thursday14" to " ", "thursday15" to " ", "thursday16" to " ", "thursday17" to " ", "thursday18" to " ", "thursday19" to " ", "thursday20" to " ",
-                    "friday9" to " ", "friday10" to " ", "friday11" to " ", "friday12" to " ", "friday13" to " ", "friday14" to " ", "friday15" to " ", "friday16" to " ", "friday17" to " ", "friday18" to " ", "friday19" to " ", "friday20" to " "
-                )
-                userDocument.update(updates)
-
-                Toast.makeText(this, "모든 일정이 삭제되었습니다.", Toast.LENGTH_SHORT).show()
-
-                dialog.dismiss()
-            }
-            deleteall_cancel.setOnClickListener { dialog.dismiss() }
-
-            dialog.show()
-        }
-
         // 로그아웃 버튼
         logoutBtn.setOnClickListener {
             var sharedPreferences = getSharedPreferences("MyAppPreferences", MODE_PRIVATE)
@@ -955,6 +962,105 @@ class TimeTableActivity : AppCompatActivity() {
             startActivity(intent)
             this?.finish()
         }
+
+        // 알림 설정 버튼
+        alarmBtn.setOnClickListener {
+
+            val permission = Manifest.permission.USE_EXACT_ALARM
+            val requestCode = 1
+            requestPermissions(arrayOf(permission), requestCode)
+
+
+            val notificationManager = NotificationManagerCompat.from(this)
+            val areNotificationsEnabled = notificationManager.areNotificationsEnabled()
+
+            if (areNotificationsEnabled) {
+                val dialog = Dialog(this)
+                dialog.setContentView(R.layout.dialog_addalarm)
+
+                val schedulenameid = dialog.findViewById<EditText>(R.id.select_name)
+                val fixbutton = dialog.findViewById<Button>(R.id.add_alarm_confirm)
+                val cancelbutton = dialog.findViewById<Button>(R.id.cancel_button)
+
+                val dayselect_mon = dialog.findViewById<CheckBox>(R.id.monday)
+                val dayselect_tue = dialog.findViewById<CheckBox>(R.id.tuesday)
+                val dayselect_wed = dialog.findViewById<CheckBox>(R.id.wednesday)
+                val dayselect_thu = dialog.findViewById<CheckBox>(R.id.thursday)
+                val dayselect_fri = dialog.findViewById<CheckBox>(R.id.friday)
+
+                val hour = dialog.findViewById<EditText>(R.id.hour)
+                val minute = dialog.findViewById<EditText>(R.id.minute)
+                var hourname = 0
+                var minutename = 0
+
+                fixbutton.setOnClickListener {
+                    val schedulename = schedulenameid.text.toString()
+                    try {
+                        hourname = hour.text.toString().toInt()
+                        minutename = minute.text.toString().toInt()
+                    } catch (e: NumberFormatException) {
+                        Toast.makeText(this, "올바른 시간을 입력해 주세요.", Toast.LENGTH_SHORT).show()
+                        return@setOnClickListener
+                    }
+
+                    if (!dayselect_mon.isChecked && !dayselect_tue.isChecked && !dayselect_wed.isChecked && !dayselect_thu.isChecked && !dayselect_fri.isChecked) {
+                        Toast.makeText(this, "요일을 선택해 주세요.", Toast.LENGTH_SHORT).show()
+                        return@setOnClickListener
+                    }
+
+                    val selectedDays = mutableListOf<Int>()
+                    if (dayselect_mon.isChecked) selectedDays.add(Calendar.MONDAY)
+                    if (dayselect_tue.isChecked) selectedDays.add(Calendar.TUESDAY)
+                    if (dayselect_wed.isChecked) selectedDays.add(Calendar.WEDNESDAY)
+                    if (dayselect_thu.isChecked) selectedDays.add(Calendar.THURSDAY)
+                    if (dayselect_fri.isChecked) selectedDays.add(Calendar.FRIDAY)
+
+                    val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+                    val intent = Intent(this, AlarmReceiver::class.java)
+                    intent.putExtra("schedule_name", schedulename) // schedulename 값을 intent에 추가
+                    val pendingIntent = PendingIntent.getBroadcast(
+                        this,
+                        0,
+                        intent,
+                        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                    )
+
+                    val calendar = Calendar.getInstance()
+                    val currentDay = calendar.get(Calendar.DAY_OF_WEEK)
+
+                    for (day in selectedDays) {
+                        val timeDiff = (day - currentDay + 7) % 7
+                        calendar.timeInMillis = System.currentTimeMillis()
+                        calendar.add(Calendar.DAY_OF_WEEK, timeDiff)
+                        calendar.set(Calendar.HOUR_OF_DAY, hourname)
+                        calendar.set(Calendar.MINUTE, minutename)
+                        calendar.set(Calendar.SECOND, 0)
+
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            alarmManager.setExactAndAllowWhileIdle(
+                                AlarmManager.RTC_WAKEUP,
+                                calendar.timeInMillis,
+                                pendingIntent
+                            )
+                        } else {
+                            alarmManager.setExact(
+                                AlarmManager.RTC_WAKEUP,
+                                calendar.timeInMillis,
+                                pendingIntent
+                            )
+                        }
+                    }
+                    dialog.dismiss()
+                }
+                cancelbutton.setOnClickListener { dialog.dismiss() }
+                dialog.show()
+            }
+            else {val intent = Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
+                intent.putExtra(Settings.EXTRA_APP_PACKAGE, packageName)
+                startActivity(intent)
+            }
+        }
+
 
         // 각 버튼 별 시간표 일정 수정/삭제 버튼
         monday9.setOnClickListener  {editplan(monday9, "월요일", "9시~10시", "monday9")}

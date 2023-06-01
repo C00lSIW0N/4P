@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/schedule_name"
+            android:id="@+id/alarm_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="일정의 이름은?"
@@ -23,7 +23,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="일정의 이름"
-            android:singleLine="true"
             android:maxLines="1"
             android:maxLength="12" />
 
@@ -31,7 +30,7 @@
             android:id="@+id/schedule_day"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="일정을 추가할 요일은?"
+            android:text="알림을 추가할 요일은?"
             android:textSize="20sp" />
 
         <CheckBox
@@ -64,95 +63,47 @@
             android:id="@+id/schedule_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="시작과 끝 시간?"
+            android:text="알림의 시간은?"
             android:textSize="20sp" />
 
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="5"
-            android:orientation="horizontal"
-            android:rowCount="3"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <CheckBox
-                android:id="@+id/timeselect_9"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:maxLength="2"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:hint="0 ~ 23" />
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9" />
+                android:textSize="20sp"
+                android:text="시"
+                android:layout_marginEnd="20dp"/>
 
-            <CheckBox
-                android:id="@+id/timeselect_10"
+            <EditText
+                android:id="@+id/minute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:maxLength="2"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:hint="0 ~ 59" />
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:textSize="20sp"
+                android:text="분"/>
+        </LinearLayout>
 
-            <CheckBox
-                android:id="@+id/timeselect_11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="11" />
-
-            <CheckBox
-                android:id="@+id/timeselect_12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12" />
-
-            <CheckBox
-                android:id="@+id/timeselect_13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1" />
-
-            <CheckBox
-                android:id="@+id/timeselect_14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2" />
-
-            <CheckBox
-                android:id="@+id/timeselect_15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3" />
-
-            <CheckBox
-                android:id="@+id/timeselect_16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4" />
-
-            <CheckBox
-                android:id="@+id/timeselect_17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <CheckBox
-                android:id="@+id/timeselect_18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6" />
-
-            <CheckBox
-                android:id="@+id/timeselect_19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7" />
-
-            <CheckBox
-                android:id="@+id/timeselect_20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8" />
-
-            <CheckBox
-                android:id="@+id/timeselect_21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9" />
-        </GridLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -160,32 +111,23 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/delete_allschedules"
+                android:id="@+id/add_alarm_confirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#ffffff"
-                android:layout_weight="3"
-                android:background="@drawable/rounded_button_red"
-                android:text="전체 삭제" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/add_schedule_confirm"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#ffffff"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:background="@drawable/rounded_button_blue"
-                android:text="일정 추가
-" />
+                android:text="알림 추가" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/cancel_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#ffffff"
-                android:layout_weight="3"
+                android:layout_weight="1"
                 android:background="@drawable/rounded_button_red"
                 android:text="취소" />
+
         </LinearLayout>
     </LinearLayout>
 

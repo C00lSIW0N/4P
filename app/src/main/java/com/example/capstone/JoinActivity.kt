@@ -51,36 +51,39 @@ class JoinActivity : AppCompatActivity() {
             if (email != "" && password != "" && confirmpassword != "")
             {
                 if (isEmailValid(email)) {
-                    if (password == confirmpassword) {
-                        auth.createUserWithEmailAndPassword(email, password) // 회원 가입
-                            .addOnCompleteListener { result ->
-                                if (result.isSuccessful) {
-                                    Toast.makeText(this, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show()
+                    if (password.length >= 6) {
+                        if (password == confirmpassword) {
+                            auth.createUserWithEmailAndPassword(email, password) // 회원 가입
+                                .addOnCompleteListener { result ->
+                                    if (result.isSuccessful) {
+                                        Toast.makeText(this, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show()
 
-                                    // 파이어베이스에 필드 만들고 모든 시간표를 -로 지정하기
-                                    val db: FirebaseFirestore = Firebase.firestore
-                                    val userRef = db.collection("user-timetable")
+                                        // 파이어베이스에 필드 만들고 모든 시간표를 -로 지정하기
+                                        val db: FirebaseFirestore = Firebase.firestore
+                                        val userRef = db.collection("user-timetable")
 
-                                    val tempUser = userRef.document(email)
+                                        val tempUser = userRef.document(email)
 
-                                    tempUser.set(mapOf(
-                                        "monday9" to " ", "monday10" to " ", "monday11" to " ", "monday12" to " ", "monday13" to " ", "monday14" to " ", "monday15" to " ", "monday16" to " ", "monday17" to " ", "monday18" to " ", "monday19" to " ", "monday20" to " ",
-                                        "tuesday9" to " ", "tuesday10" to " ", "tuesday11" to " ", "tuesday12" to " ", "tuesday13" to " ", "tuesday14" to " ", "tuesday15" to " ", "tuesday16" to " ", "tuesday17" to " ", "tuesday18" to " ", "tuesday19" to " ", "tuesday20" to " ",
-                                        "wednesday9" to " ", "wednesday10" to " ", "wednesday11" to " ", "wednesday12" to " ", "wednesday13" to " ", "wednesday14" to " ", "wednesday15" to " ", "wednesday16" to " ", "wednesday17" to " ", "wednesday18" to " ", "wednesday19" to " ", "wednesday20" to " ",
-                                        "thursday9" to " ", "thursday10" to " ", "thursday11" to " ", "thursday12" to " ", "thursday13" to " ", "thursday14" to " ", "thursday15" to " ", "thursday16" to " ", "thursday17" to " ", "thursday18" to " ", "thursday19" to " ", "thursday20" to " ",
-                                        "friday9" to " ", "friday10" to " ", "friday11" to " ", "friday12" to " ", "friday13" to " ", "friday14" to " ", "friday15" to " ", "friday16" to " ", "friday17" to " ", "friday18" to " ", "friday19" to " ", "friday20" to " "
-                                    ))
+                                        tempUser.set(mapOf(
+                                            "monday9" to " ", "monday10" to " ", "monday11" to " ", "monday12" to " ", "monday13" to " ", "monday14" to " ", "monday15" to " ", "monday16" to " ", "monday17" to " ", "monday18" to " ", "monday19" to " ", "monday20" to " ",
+                                            "tuesday9" to " ", "tuesday10" to " ", "tuesday11" to " ", "tuesday12" to " ", "tuesday13" to " ", "tuesday14" to " ", "tuesday15" to " ", "tuesday16" to " ", "tuesday17" to " ", "tuesday18" to " ", "tuesday19" to " ", "tuesday20" to " ",
+                                            "wednesday9" to " ", "wednesday10" to " ", "wednesday11" to " ", "wednesday12" to " ", "wednesday13" to " ", "wednesday14" to " ", "wednesday15" to " ", "wednesday16" to " ", "wednesday17" to " ", "wednesday18" to " ", "wednesday19" to " ", "wednesday20" to " ",
+                                            "thursday9" to " ", "thursday10" to " ", "thursday11" to " ", "thursday12" to " ", "thursday13" to " ", "thursday14" to " ", "thursday15" to " ", "thursday16" to " ", "thursday17" to " ", "thursday18" to " ", "thursday19" to " ", "thursday20" to " ",
+                                            "friday9" to " ", "friday10" to " ", "friday11" to " ", "friday12" to " ", "friday13" to " ", "friday14" to " ", "friday15" to " ", "friday16" to " ", "friday17" to " ", "friday18" to " ", "friday19" to " ", "friday20" to " "
+                                        ))
 
-                                    Toast.makeText(this, "회원가입 성공", Toast.LENGTH_SHORT).show()
-                                    var intent = Intent(this, LoginActivity::class.java)
-                                    startActivity(intent)
+                                        Toast.makeText(this, "회원가입 성공", Toast.LENGTH_SHORT).show()
+                                        var intent = Intent(this, LoginActivity::class.java)
+                                        startActivity(intent)
+                                    }
+                                    else {
+                                        Toast.makeText(this, "오류가 발생했습니다.", Toast.LENGTH_SHORT).show()
+                                    }
                                 }
-                                else {
-                                    Toast.makeText(this, "오류가 발생했습니다.", Toast.LENGTH_SHORT).show()
-                                }
-                            }
+                        }
+                        else { errorTV.text = "비밀번호가 일치하지 않습니다." }
                     }
-                    else { errorTV.text = "비밀번호가 일치하지 않습니다." }
+                    else { errorTV.text = "비밀번호는 6자 이상이어야 합니다." }
                 }
                 else { errorTV.text = "이메일 형식으로 입력해 주세요." }
             }

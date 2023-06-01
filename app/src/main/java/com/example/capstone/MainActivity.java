@@ -120,8 +120,8 @@ public class MainActivity extends AppCompatActivity {
                 callAPI(question);
                 tv_welcome.setVisibility(View.GONE);
             }
-    });
-}
+        });
+    }
 
     void addToChat(String message, String sentBy) {
         runOnUiThread(new Runnable() {

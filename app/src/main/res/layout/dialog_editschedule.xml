@@ -25,7 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="일정의 이름"
-            android:maxLength="15" />
+            android:singleLine="true"
+            android:maxLines="1"
+            android:maxLength="12" />
 
 
         <LinearLayout
