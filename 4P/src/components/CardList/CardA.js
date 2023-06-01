@@ -27,7 +27,7 @@ function CardA() {
   };
 
   const cardTitle = "제주 신라호텔";
-  const priceText = "229,000원~457,000원";
+  const priceText = "457,000원";
   const cardText = `${priceText}\n화사한 아침에 #모닝밀\n5월~6월 전객실 혜택 #풀장 #힐링`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
@@ -44,7 +44,9 @@ function CardA() {
         onMouseLeave={handleMouseLeave}
         style={{ cursor: isMouseOver ? "pointer" : "default" }}
       >
-        <Card.Img variant="top" src={sampleA} />
+        <div style={{ height: '6cm', overflow: 'hidden' }}>
+          <Card.Img variant="top" src={sampleA} style={{ height: '100%', objectFit: 'cover' }} />
+        </div>
       </div>
       <Card.Body>
         <Card.Title

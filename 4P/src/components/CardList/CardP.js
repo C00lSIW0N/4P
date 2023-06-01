@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import sampleA from '../../images/sampleA.jpg';
+import sampleP from '../../images/sampleP.jpg';
 import greyheart from '../../images/greyheart.png';
 import pinkheart from '../../images/pinkheart.png';
 
@@ -26,8 +26,9 @@ function CardP() {
     window.location.href = "/detailpage";
   };
 
-  const cardTitle = "Card Title";
-  const cardText = "AAA\nBBB\nCCC";
+  const cardTitle = "에벤에셀호텔";
+  const priceText = "79,902원";
+  const cardText = `${priceText}\n햄버거 전문점 '버거 307'\n망고 음료 전문 카페 '망고레이'`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");
@@ -43,7 +44,9 @@ function CardP() {
         onMouseLeave={handleMouseLeave}
         style={{ cursor: isMouseOver ? "pointer" : "default" }}
       >
-        <Card.Img variant="top" src={sampleA} />
+        <div style={{ height: '6cm', overflow: 'hidden' }}>
+          <Card.Img variant="top" src={sampleP} style={{ height: '100%', objectFit: 'cover' }} />
+        </div>
       </div>
       <Card.Body>
         <Card.Title

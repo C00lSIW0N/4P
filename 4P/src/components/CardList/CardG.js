@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import sampleA from '../../images/sampleA.jpg';
+import sampleG from '../../images/sampleG.jpg';
 import greyheart from '../../images/greyheart.png';
 import pinkheart from '../../images/pinkheart.png';
 
@@ -26,8 +26,9 @@ function CardG() {
     window.location.href = "/detailpage";
   };
 
-  const cardTitle = "Card Title";
-  const cardText = "AAA\nBBB\nCCC";
+  const cardTitle = "해비치 호텔&리조트";
+  const priceText = "298,265원";
+  const cardText = `${priceText}\n야외 수영장은 실내로도 연결\n최소 객실 면적이 47평방미터로 국내에서 가장 넓은 공간을 자랑`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");
@@ -43,7 +44,9 @@ function CardG() {
         onMouseLeave={handleMouseLeave}
         style={{ cursor: isMouseOver ? "pointer" : "default" }}
       >
-        <Card.Img variant="top" src={sampleA} />
+        <div style={{ height: '6cm', overflow: 'hidden' }}>
+          <Card.Img variant="top" src={sampleG} style={{ height: '100%', objectFit: 'cover' }} />
+        </div>
       </div>
       <Card.Body>
         <Card.Title

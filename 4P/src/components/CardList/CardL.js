@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import sampleA from '../../images/sampleA.jpg';
+import sampleL from '../../images/sampleL.jpg';
 import greyheart from '../../images/greyheart.png';
 import pinkheart from '../../images/pinkheart.png';
 
@@ -26,8 +26,9 @@ function CardL() {
     window.location.href = "/detailpage";
   };
 
-  const cardTitle = "Card Title";
-  const cardText = "AAA\nBBB\nCCC";
+  const cardTitle = "히든 클리프 호텔";
+  const priceText = "242,880원";
+  const cardText = `${priceText}\n자연 친화적인 인피니티 풀\n270도 파노라마 전망을 감상할 수 있는 올 데이 다이닝 레스토랑 '파노라마’에서는 조식 뷔페부터 다채롭게 구성된 메뉴`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");
@@ -43,7 +44,9 @@ function CardL() {
         onMouseLeave={handleMouseLeave}
         style={{ cursor: isMouseOver ? "pointer" : "default" }}
       >
-        <Card.Img variant="top" src={sampleA} />
+        <div style={{ height: '6cm', overflow: 'hidden' }}>
+          <Card.Img variant="top" src={sampleL} style={{ height: '100%', objectFit: 'cover' }} />
+        </div>
       </div>
       <Card.Body>
         <Card.Title

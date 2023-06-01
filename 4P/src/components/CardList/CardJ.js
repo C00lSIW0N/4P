@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import sampleA from '../../images/sampleA.jpg';
+import sampleJ from '../../images/sampleJ.jpg';
 import greyheart from '../../images/greyheart.png';
 import pinkheart from '../../images/pinkheart.png';
 
@@ -26,8 +26,9 @@ function CardJ() {
     window.location.href = "/detailpage";
   };
 
-  const cardTitle = "Card Title";
-  const cardText = "AAA\nBBB\nCCC";
+  const cardTitle = "에코랜드 호텔";
+  const priceText = "350,000원";
+  const cardText = `${priceText}\n자연 그대로의 숲과 아름다운 호수에 둘러싸여 있어 자연과 함께하는 편안하고 즐거운 휴식 경험`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");
@@ -43,7 +44,9 @@ function CardJ() {
         onMouseLeave={handleMouseLeave}
         style={{ cursor: isMouseOver ? "pointer" : "default" }}
       >
-        <Card.Img variant="top" src={sampleA} />
+        <div style={{ height: '6cm', overflow: 'hidden' }}>
+          <Card.Img variant="top" src={sampleJ} style={{ height: '100%', objectFit: 'cover' }} />
+        </div>
       </div>
       <Card.Body>
         <Card.Title

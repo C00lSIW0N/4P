@@ -155,6 +155,10 @@ import logoToss from "../images/logo_toss.png";
 import logoCreditCard from "../images/logo_credit_card.png";
 import logoKakao from "../images/logo_kakao.png";
 import logoPayco from "../images/logo_payco.png";
+import "./Payment.css";
+import PaymentCardA from "./PaymentCardA";
+
+
 
 const Payment = () => {
   useEffect(() => {
@@ -290,10 +294,16 @@ const Payment = () => {
 
   return (
     <>
-      <h1>결제 페이지</h1>
+    <h1> 확인 및 결제</h1>
+    <div className="payment-container">
       <br />
+      <div className="payment-card-container">
+        <PaymentCardA />
+      </div>
+      <br />
+      <div className="button-container">
       <button style={{ border: "none", background: "none" }} onClick={Pay_toss}>
-        <img src={logoToss} alt="토스페이로 결제하기" style={{ width: "6cm" }} />
+        <img src={logoToss} alt="토스페이로 결제하기" style={{ width: "4cm" }} />
       </button>
       <br />
       <br />
@@ -308,9 +318,11 @@ const Payment = () => {
       <br />
       <br />
       <button style={{ border: "none", background: "none" }} onClick={Pay_payco}>
-        <img src={logoPayco} alt="페이코로 결제하기" style={{ width: "3cm" }} />
+        <img src={logoPayco} alt="페이코로 결제하기" style={{ width: "3.2cm" }} />
       <br />
       </button>
+      </div>
+    </div>
     </>
   );
 };
