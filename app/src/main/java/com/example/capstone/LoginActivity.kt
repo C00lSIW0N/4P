@@ -2,14 +2,18 @@ package com.example.capstone
 
 import android.content.Intent
 import android.content.SharedPreferences
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import android.Manifest
 import com.google.firebase.auth.FirebaseAuth
 
- class LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     lateinit var emailEt: EditText
     lateinit var passwordEt: EditText
     lateinit var loginBtn: Button
@@ -44,7 +48,6 @@ import com.google.firebase.auth.FirebaseAuth
                     }
                     else {
                         Toast.makeText(this, "자동 로그인 실패", Toast.LENGTH_SHORT).show()
-                        //onCreate(null)
                         finish()
                     }
                 }

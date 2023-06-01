@@ -17,15 +17,15 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.tasks.await
 
-class ViewBookedActivity : AppCompatActivity() {
+class ViewCartedActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: ViewBooked
-    private lateinit var dataList: MutableList<Booked>
+    private lateinit var adapter: ViewCarted
+    private lateinit var dataList: MutableList<Carted>
     private lateinit var backtotimetable: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_booked)
+        setContentView(R.layout.activity_carted)
 
         val all = findViewById<CheckBox>(R.id.all)
         val accommodation = findViewById<CheckBox>(R.id.accommodation)
@@ -38,7 +38,7 @@ class ViewBookedActivity : AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
 
         dataList = mutableListOf()
-        var filteredDataList: List<Booked> = mutableListOf()
+        var filteredDataList: List<Carted> = mutableListOf()
 
         val db: FirebaseFirestore = Firebase.firestore
         val tempuser = FirebaseAuth.getInstance().currentUser
@@ -47,13 +47,13 @@ class ViewBookedActivity : AppCompatActivity() {
             useremail = tempuser.email.toString()
         }
 
-        val bookRef = db.collection("user")
-        val bookDocument = bookRef.document(useremail)
+        val cartRef = db.collection("user-cart")
+        val cartDocument = cartRef.document(useremail)
 
-        bookDocument.get()
+        cartDocument.get()
             .addOnSuccessListener { document ->
                 if (document != null && document.exists()) {
-                    fun addBooked (type: String) {
+                    fun addCarted (type: String) {
                         for (i in 1..100) {
                             val existcheck = document?.get(type+i.toString()+"이름") as String?
                             if (existcheck != null) {
@@ -61,18 +61,18 @@ class ViewBookedActivity : AppCompatActivity() {
                                 val category = type
                                 val daytime = document.getString(type+i.toString()+"예약날짜") ?: ""
 
-                                val booked = Booked(name, category, daytime)
-                                dataList.add(booked)
+                                val carted = Carted(name, category, daytime)
+                                dataList.add(carted)
                             }
                         }
                     }
 
-                    addBooked("숙소")
-                    addBooked("식당")
-                    addBooked("관광명소")
-                    addBooked("렌트카")
+                    addCarted("숙소")
+                    addCarted("식당")
+                    addCarted("관광명소")
+                    addCarted("렌트카")
 
-                    adapter = ViewBooked(dataList)
+                    adapter = ViewCarted(dataList)
                     recyclerView.adapter = adapter
                 }
             }
@@ -87,7 +87,7 @@ class ViewBookedActivity : AppCompatActivity() {
                         (rentcar.isChecked && item.category == "렌트카")
             }
 
-            adapter = ViewBooked(filteredDataList)
+            adapter = ViewCarted(filteredDataList)
             recyclerView.adapter = adapter
         }
 

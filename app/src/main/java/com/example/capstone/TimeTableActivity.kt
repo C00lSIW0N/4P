@@ -307,155 +307,162 @@ class TimeTableActivity : AppCompatActivity() {
                 if (documentSnapshot.exists()) {
                     val data = documentSnapshot.data
 
-                    for (i in 1 .. 20) {
-                        val existcheck = data?.get("숙소"+i.toString()+"이름") as String?
-                        if (existcheck != null) {
-                            val name = data!![("숙소"+i.toString()+"이름")] as String
-                            val daytime = data!!["숙소"+i.toString()+"예약날짜"] as String
-                            val check = data!!["숙소"+i.toString()+"체크"] as String
-                            var previous_name = "이게 보이면 안되는데"
+                    fun checkBooked(type: String) {
+                        for (i in 1 .. 100) {
+                            val existcheck = data?.get(type+i.toString()+"이름") as String?
+                            if (existcheck != null) {
+                                val name = data!![(type+i.toString()+"이름")] as String
+                                val daytime = data!![type+i.toString()+"예약날짜"] as String
+                                val check = data!![type+i.toString()+"체크"] as String
+                                var previous_name = "이게 보이면 안되는데"
 
-                            fun viewautoDialog() {
-                                if (previous_name != name) {
-                                    val dialog = Dialog(this)
-                                    dialog.setContentView(R.layout.dialog_autoschedule)
+                                fun viewautoDialog() {
+                                    if (previous_name != name) {
+                                        val dialog = Dialog(this)
+                                        dialog.setContentView(R.layout.dialog_autoschedule)
 
-                                    val autoschedule_nametime = dialog.findViewById<TextView>(R.id.autoschedule_nametime)
-                                    val autoschedule_previous = dialog.findViewById<TextView>(R.id.autoschedule_previous)
-                                    val autoschedule_confirm = dialog.findViewById<Button>(R.id.autoschedule_confirm)
-                                    val autoschedule_cancel = dialog.findViewById<Button>(R.id.autoschedule_cancel)
+                                        val autoschedule_nametime = dialog.findViewById<TextView>(R.id.autoschedule_nametime)
+                                        val autoschedule_previous = dialog.findViewById<TextView>(R.id.autoschedule_previous)
+                                        val autoschedule_confirm = dialog.findViewById<Button>(R.id.autoschedule_confirm)
+                                        val autoschedule_cancel = dialog.findViewById<Button>(R.id.autoschedule_cancel)
 
-                                    // 다이얼로그 내용 바꾸기
-                                    fun changetext(daytime: String, autoname: String) {
-                                        var tempday = "무슨요일"
-                                        var temptime = "몇시"
+                                        // 다이얼로그 내용 바꾸기
+                                        fun changetext(daytime: String, autoname: String) {
+                                            var tempday = "무슨요일"
+                                            var temptime = "몇시"
 
-                                        // textView 내용 두 개 바꾸는 함수
-                                        fun present_previous(daytime: String, autoname: String) {
+                                            // textView 내용 두 개 바꾸는 함수
+                                            fun present_previous(daytime: String, autoname: String) {
 
-                                            if (daytime.contains("monday")) { tempday = "월요일 " }
-                                            else if (daytime.contains("tuesday")) { tempday = "화요일 " }
-                                            else if (daytime.contains("wednesday")) { tempday = "수요일 " }
-                                            else if (daytime.contains("thursday")) { tempday = "목요일 " }
-                                            else if (daytime.contains("friday")) { tempday = "금요일 " }
+                                                if (daytime.contains("monday")) { tempday = "월요일 " }
+                                                else if (daytime.contains("tuesday")) { tempday = "화요일 " }
+                                                else if (daytime.contains("wednesday")) { tempday = "수요일 " }
+                                                else if (daytime.contains("thursday")) { tempday = "목요일 " }
+                                                else if (daytime.contains("friday")) { tempday = "금요일 " }
 
-                                            if (daytime.contains("9")) { temptime = "9시, " }
-                                            else if (daytime.contains("10")) { temptime = "10시, " }
-                                            else if (daytime.contains("11")) { temptime = "11시, " }
-                                            else if (daytime.contains("12")) { temptime = "12시, " }
-                                            else if (daytime.contains("13")) { temptime = "13시, " }
-                                            else if (daytime.contains("14")) { temptime = "14시, " }
-                                            else if (daytime.contains("15")) { temptime = "15시, " }
-                                            else if (daytime.contains("16")) { temptime = "16시, " }
-                                            else if (daytime.contains("17")) { temptime = "17시, " }
-                                            else if (daytime.contains("18")) { temptime = "18시, " }
-                                            else if (daytime.contains("20")) { temptime = "20시, " }
+                                                if (daytime.contains("9")) { temptime = "9시, " }
+                                                else if (daytime.contains("10")) { temptime = "10시, " }
+                                                else if (daytime.contains("11")) { temptime = "11시, " }
+                                                else if (daytime.contains("12")) { temptime = "12시, " }
+                                                else if (daytime.contains("13")) { temptime = "13시, " }
+                                                else if (daytime.contains("14")) { temptime = "14시, " }
+                                                else if (daytime.contains("15")) { temptime = "15시, " }
+                                                else if (daytime.contains("16")) { temptime = "16시, " }
+                                                else if (daytime.contains("17")) { temptime = "17시, " }
+                                                else if (daytime.contains("18")) { temptime = "18시, " }
+                                                else if (daytime.contains("20")) { temptime = "20시, " }
 
-                                            if (daytime.contains("19")) { temptime = "19시, " }
+                                                if (daytime.contains("19")) { temptime = "19시, " }
 
-                                            autoschedule_nametime.text = tempday + temptime + autoname
+                                                autoschedule_nametime.text = tempday + temptime + autoname
 
-                                            if (previous_name == " ") { autoschedule_previous.text = "이 시간의 일정이 없습니다." }
-                                            else { autoschedule_previous.text = "이 시간의 일정: " + previous_name }
-                                        }
-                                        present_previous(daytime, autoname)
-
-                                        // 확인 버튼
-                                        autoschedule_confirm.setOnClickListener {
-                                            userDocument.update(daytime, autoname)
-                                            if (daytime == "monday9") {changebutton(monday9, autoname, 0)}
-                                            else if (daytime == "monday10") {changebutton(monday10, autoname, 0)}
-                                            else if (daytime == "monday11") {changebutton(monday11, autoname, 0)}
-                                            else if (daytime == "monday12") {changebutton(monday12, autoname, 0)}
-                                            else if (daytime == "monday13") {changebutton(monday13, autoname, 0)}
-                                            else if (daytime == "monday14") {changebutton(monday14, autoname, 0)}
-                                            else if (daytime == "monday15") {changebutton(monday15, autoname, 0)}
-                                            else if (daytime == "monday16") {changebutton(monday16, autoname, 0)}
-                                            else if (daytime == "monday17") {changebutton(monday17, autoname, 0)}
-                                            else if (daytime == "monday18") {changebutton(monday18, autoname, 0)}
-                                            else if (daytime == "monday19") {changebutton(monday19, autoname, 0)}
-                                            else if (daytime == "monday20") {changebutton(monday20, autoname, 0)}
-
-                                            else if (daytime == "tuesday9") {changebutton(tuesday9, autoname, 1)}
-                                            else if (daytime == "tuesday10") {changebutton(tuesday10, autoname, 1)}
-                                            else if (daytime == "tuesday11") {changebutton(tuesday11, autoname, 1)}
-                                            else if (daytime == "tuesday12") {changebutton(tuesday12, autoname, 1)}
-                                            else if (daytime == "tuesday13") {changebutton(tuesday13, autoname, 1)}
-                                            else if (daytime == "tuesday14") {changebutton(tuesday14, autoname, 1)}
-                                            else if (daytime == "tuesday15") {changebutton(tuesday15, autoname, 1)}
-                                            else if (daytime == "tuesday16") {changebutton(tuesday16, autoname, 1)}
-                                            else if (daytime == "tuesday17") {changebutton(tuesday17, autoname, 1)}
-                                            else if (daytime == "tuesday18") {changebutton(tuesday18, autoname, 1)}
-                                            else if (daytime == "tuesday19") {changebutton(tuesday19, autoname, 1)}
-                                            else if (daytime == "tuesday20") {changebutton(tuesday20, autoname, 1)}
-
-                                            else if (daytime == "wednesday9") {changebutton(wednesday9, autoname, 2)}
-                                            else if (daytime == "wednesday10") {changebutton(wednesday10, autoname, 2)}
-                                            else if (daytime == "wednesday11") {changebutton(wednesday11, autoname, 2)}
-                                            else if (daytime == "wednesday12") {changebutton(wednesday12, autoname, 2)}
-                                            else if (daytime == "wednesday13") {changebutton(wednesday13, autoname, 2)}
-                                            else if (daytime == "wednesday14") {changebutton(wednesday14, autoname, 2)}
-                                            else if (daytime == "wednesday15") {changebutton(wednesday15, autoname, 2)}
-                                            else if (daytime == "wednesday16") {changebutton(wednesday16, autoname, 2)}
-                                            else if (daytime == "wednesday17") {changebutton(wednesday17, autoname, 2)}
-                                            else if (daytime == "wednesday18") {changebutton(wednesday18, autoname, 2)}
-                                            else if (daytime == "wednesday19") {changebutton(wednesday19, autoname, 2)}
-                                            else if (daytime == "wednesday20") {changebutton(wednesday20, autoname, 2)}
-
-                                            else if (daytime == "thursday9") {changebutton(thursday9, autoname, 3)}
-                                            else if (daytime == "thursday10") {changebutton(thursday10, autoname, 3)}
-                                            else if (daytime == "thursday11") {changebutton(thursday11, autoname, 3)}
-                                            else if (daytime == "thursday12") {changebutton(thursday12, autoname, 3)}
-                                            else if (daytime == "thursday13") {changebutton(thursday13, autoname, 3)}
-                                            else if (daytime == "thursday14") {changebutton(thursday14, autoname, 3)}
-                                            else if (daytime == "thursday15") {changebutton(thursday15, autoname, 3)}
-                                            else if (daytime == "thursday16") {changebutton(thursday16, autoname, 3)}
-                                            else if (daytime == "thursday17") {changebutton(thursday17, autoname, 3)}
-                                            else if (daytime == "thursday18") {changebutton(thursday18, autoname, 3)}
-                                            else if (daytime == "thursday19") {changebutton(thursday19, autoname, 3)}
-                                            else if (daytime == "thursday20") {changebutton(thursday20, autoname, 3)}
-
-                                            else if (daytime == "friday9") {changebutton(friday9, autoname, 4)}
-                                            else if (daytime == "friday10") {changebutton(friday10, autoname, 4)}
-                                            else if (daytime == "friday11") {changebutton(friday11, autoname, 4)}
-                                            else if (daytime == "friday12") {changebutton(friday12, autoname, 4)}
-                                            else if (daytime == "friday13") {changebutton(friday13, autoname, 4)}
-                                            else if (daytime == "friday14") {changebutton(friday14, autoname, 4)}
-                                            else if (daytime == "friday15") {changebutton(friday15, autoname, 4)}
-                                            else if (daytime == "friday16") {changebutton(friday16, autoname, 4)}
-                                            else if (daytime == "friday17") {changebutton(friday17, autoname, 4)}
-                                            else if (daytime == "friday18") {changebutton(friday18, autoname, 4)}
-                                            else if (daytime == "friday19") {changebutton(friday19, autoname, 4)}
-                                            else if (daytime == "friday20") {changebutton(friday20, autoname, 4)}
-
-                                            dialog.dismiss()
-                                        }
-                                        // 취소버튼
-                                        autoschedule_cancel.setOnClickListener { dialog.dismiss() }
-                                    }
-                                    changetext(daytime, name)
-
-                                    dialog.show()
-                                }
-                            }
-
-                            if (check == "0") {
-                                userDocument.get()
-                                    .addOnCompleteListener { task ->
-                                        if (task.isSuccessful) {
-                                            val documentSnapshot = task.result
-                                            if (documentSnapshot != null && documentSnapshot.exists()) {
-                                                val data1 = documentSnapshot.data
-                                                previous_name = data1!![daytime] as String
-                                                viewautoDialog()
+                                                if (previous_name == " ") { autoschedule_previous.text = "이 시간의 일정이 없습니다." }
+                                                else { autoschedule_previous.text = "이 시간의 일정: " + previous_name }
                                             }
+                                            present_previous(daytime, autoname)
+
+                                            // 확인 버튼
+                                            autoschedule_confirm.setOnClickListener {
+                                                userDocument.update(daytime, autoname)
+                                                if (daytime == "monday9") {changebutton(monday9, autoname, 0)}
+                                                else if (daytime == "monday10") {changebutton(monday10, autoname, 0)}
+                                                else if (daytime == "monday11") {changebutton(monday11, autoname, 0)}
+                                                else if (daytime == "monday12") {changebutton(monday12, autoname, 0)}
+                                                else if (daytime == "monday13") {changebutton(monday13, autoname, 0)}
+                                                else if (daytime == "monday14") {changebutton(monday14, autoname, 0)}
+                                                else if (daytime == "monday15") {changebutton(monday15, autoname, 0)}
+                                                else if (daytime == "monday16") {changebutton(monday16, autoname, 0)}
+                                                else if (daytime == "monday17") {changebutton(monday17, autoname, 0)}
+                                                else if (daytime == "monday18") {changebutton(monday18, autoname, 0)}
+                                                else if (daytime == "monday19") {changebutton(monday19, autoname, 0)}
+                                                else if (daytime == "monday20") {changebutton(monday20, autoname, 0)}
+
+                                                else if (daytime == "tuesday9") {changebutton(tuesday9, autoname, 1)}
+                                                else if (daytime == "tuesday10") {changebutton(tuesday10, autoname, 1)}
+                                                else if (daytime == "tuesday11") {changebutton(tuesday11, autoname, 1)}
+                                                else if (daytime == "tuesday12") {changebutton(tuesday12, autoname, 1)}
+                                                else if (daytime == "tuesday13") {changebutton(tuesday13, autoname, 1)}
+                                                else if (daytime == "tuesday14") {changebutton(tuesday14, autoname, 1)}
+                                                else if (daytime == "tuesday15") {changebutton(tuesday15, autoname, 1)}
+                                                else if (daytime == "tuesday16") {changebutton(tuesday16, autoname, 1)}
+                                                else if (daytime == "tuesday17") {changebutton(tuesday17, autoname, 1)}
+                                                else if (daytime == "tuesday18") {changebutton(tuesday18, autoname, 1)}
+                                                else if (daytime == "tuesday19") {changebutton(tuesday19, autoname, 1)}
+                                                else if (daytime == "tuesday20") {changebutton(tuesday20, autoname, 1)}
+
+                                                else if (daytime == "wednesday9") {changebutton(wednesday9, autoname, 2)}
+                                                else if (daytime == "wednesday10") {changebutton(wednesday10, autoname, 2)}
+                                                else if (daytime == "wednesday11") {changebutton(wednesday11, autoname, 2)}
+                                                else if (daytime == "wednesday12") {changebutton(wednesday12, autoname, 2)}
+                                                else if (daytime == "wednesday13") {changebutton(wednesday13, autoname, 2)}
+                                                else if (daytime == "wednesday14") {changebutton(wednesday14, autoname, 2)}
+                                                else if (daytime == "wednesday15") {changebutton(wednesday15, autoname, 2)}
+                                                else if (daytime == "wednesday16") {changebutton(wednesday16, autoname, 2)}
+                                                else if (daytime == "wednesday17") {changebutton(wednesday17, autoname, 2)}
+                                                else if (daytime == "wednesday18") {changebutton(wednesday18, autoname, 2)}
+                                                else if (daytime == "wednesday19") {changebutton(wednesday19, autoname, 2)}
+                                                else if (daytime == "wednesday20") {changebutton(wednesday20, autoname, 2)}
+
+                                                else if (daytime == "thursday9") {changebutton(thursday9, autoname, 3)}
+                                                else if (daytime == "thursday10") {changebutton(thursday10, autoname, 3)}
+                                                else if (daytime == "thursday11") {changebutton(thursday11, autoname, 3)}
+                                                else if (daytime == "thursday12") {changebutton(thursday12, autoname, 3)}
+                                                else if (daytime == "thursday13") {changebutton(thursday13, autoname, 3)}
+                                                else if (daytime == "thursday14") {changebutton(thursday14, autoname, 3)}
+                                                else if (daytime == "thursday15") {changebutton(thursday15, autoname, 3)}
+                                                else if (daytime == "thursday16") {changebutton(thursday16, autoname, 3)}
+                                                else if (daytime == "thursday17") {changebutton(thursday17, autoname, 3)}
+                                                else if (daytime == "thursday18") {changebutton(thursday18, autoname, 3)}
+                                                else if (daytime == "thursday19") {changebutton(thursday19, autoname, 3)}
+                                                else if (daytime == "thursday20") {changebutton(thursday20, autoname, 3)}
+
+                                                else if (daytime == "friday9") {changebutton(friday9, autoname, 4)}
+                                                else if (daytime == "friday10") {changebutton(friday10, autoname, 4)}
+                                                else if (daytime == "friday11") {changebutton(friday11, autoname, 4)}
+                                                else if (daytime == "friday12") {changebutton(friday12, autoname, 4)}
+                                                else if (daytime == "friday13") {changebutton(friday13, autoname, 4)}
+                                                else if (daytime == "friday14") {changebutton(friday14, autoname, 4)}
+                                                else if (daytime == "friday15") {changebutton(friday15, autoname, 4)}
+                                                else if (daytime == "friday16") {changebutton(friday16, autoname, 4)}
+                                                else if (daytime == "friday17") {changebutton(friday17, autoname, 4)}
+                                                else if (daytime == "friday18") {changebutton(friday18, autoname, 4)}
+                                                else if (daytime == "friday19") {changebutton(friday19, autoname, 4)}
+                                                else if (daytime == "friday20") {changebutton(friday20, autoname, 4)}
+
+                                                dialog.dismiss()
+                                            }
+                                            // 취소버튼
+                                            autoschedule_cancel.setOnClickListener { dialog.dismiss() }
                                         }
-                                        else { Toast.makeText(this, "오류가 발생했습니다.", Toast.LENGTH_SHORT).show() }
+                                        changetext(daytime, name)
+
+                                        dialog.show()
                                     }
-                                bookDocument.update("숙소"+i.toString()+"체크", "1")
+                                }
+
+                                if (check == "0") {
+                                    userDocument.get()
+                                        .addOnCompleteListener { task ->
+                                            if (task.isSuccessful) {
+                                                val documentSnapshot = task.result
+                                                if (documentSnapshot != null && documentSnapshot.exists()) {
+                                                    val data1 = documentSnapshot.data
+                                                    previous_name = data1!![daytime] as String
+                                                    viewautoDialog()
+                                                }
+                                            }
+                                            else { Toast.makeText(this, "오류가 발생했습니다.", Toast.LENGTH_SHORT).show() }
+                                        }
+                                    bookDocument.update(type+i.toString()+"체크", "1")
+                                }
                             }
                         }
                     }
+
+                    checkBooked("숙소")
+                    checkBooked("식당")
+                    checkBooked("관광명소")
+                    checkBooked("렌트카")
                 }
             }
 
@@ -892,7 +899,10 @@ class TimeTableActivity : AppCompatActivity() {
         }
 
         // 장바구니 보기 액티비티로 이동
-        viewCart.setOnClickListener { Toast.makeText(this, "아직 연동이 안 됐어요.", Toast.LENGTH_SHORT).show() }
+        viewCart.setOnClickListener {
+            var intent = Intent(this, ViewCartedActivity::class.java)
+            startActivity(intent)
+        }
 
         // 일정 전체 삭제 버튼 다이얼로그
         deleteAllSchedule.setOnClickListener {

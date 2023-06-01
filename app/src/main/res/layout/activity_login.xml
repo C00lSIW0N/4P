@@ -13,14 +13,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
-        <TextView
-            android:id="@+id/welcome"
+        <ImageView
+            android:id="@+id/welcomeImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="로그인"
+            android:src="@drawable/chatraveler_logo"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
             android:layout_marginBottom="30dp"
-            android:textAlignment="center"
-            android:textSize="30sp" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:contentDescription="Welcome Image" />
+
 
         <EditText
             android:id="@+id/emailArea"
