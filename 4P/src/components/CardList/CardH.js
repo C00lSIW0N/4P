@@ -24,7 +24,7 @@ function CardH() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpageh";
   };
 
   const cardTitle = "휘닉스 제주 섭지코지";

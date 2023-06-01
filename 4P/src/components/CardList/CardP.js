@@ -24,7 +24,7 @@ function CardP() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagep";
   };
 
   const cardTitle = "에벤에셀호텔";

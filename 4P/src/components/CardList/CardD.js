@@ -24,7 +24,7 @@ function CardD() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpaged";
   };
 
   const cardTitle = "롯데 호텔 제주";

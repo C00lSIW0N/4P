@@ -24,7 +24,7 @@ function CardF() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagef";
   };
 
   const cardTitle = "그랜드 하얏트 제주";

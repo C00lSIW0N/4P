@@ -24,7 +24,7 @@ function CardE() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagee";
   };
 
   const cardTitle = "신라스테이 제주";

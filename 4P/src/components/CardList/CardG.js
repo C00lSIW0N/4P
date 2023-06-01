@@ -24,7 +24,7 @@ function CardG() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpageg";
   };
 
   const cardTitle = "해비치 호텔&리조트";

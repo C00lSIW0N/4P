@@ -43,7 +43,7 @@ function Title() {
             navbarScroll
           >
             <Nav.Link href="mypage" style={linkStyle}>My Page</Nav.Link>
-            <Nav.Link href="login" style={linkStyle}>Log In</Nav.Link>
+            <Nav.Link href="login" style={linkStyle}>Log Out</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

@@ -24,7 +24,7 @@ function CardI() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagei";
   };
 
   const cardTitle = "라마다 프라자 제주";

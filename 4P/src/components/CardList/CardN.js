@@ -24,7 +24,7 @@ function CardN() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagen";
   };
 
   const cardTitle = "호텔 토스카나";

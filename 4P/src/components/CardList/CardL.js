@@ -24,7 +24,7 @@ function CardL() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagel";
   };
 
   const cardTitle = "히든 클리프 호텔";

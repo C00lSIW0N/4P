@@ -24,7 +24,7 @@ function CardM() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagem";
   };
 
   const cardTitle = "그랜드 조선 제주";

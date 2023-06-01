@@ -24,7 +24,7 @@ function CardJ() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagej";
   };
 
   const cardTitle = "에코랜드 호텔";

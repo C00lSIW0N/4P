@@ -24,7 +24,7 @@ function CardA() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagea";
   };
 
   const cardTitle = "제주 신라호텔";

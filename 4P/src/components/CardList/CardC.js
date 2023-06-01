@@ -24,7 +24,7 @@ function CardC() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagec";
   };
 
   const cardTitle = "메종 글래드 제주";

@@ -24,7 +24,7 @@ function CardK() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpagek";
   };
 
   const cardTitle = "제주 샹그릴라 호텔";

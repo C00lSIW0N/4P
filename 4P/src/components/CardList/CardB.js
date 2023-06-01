@@ -24,7 +24,7 @@ function CardB() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpageb";
   };
 
   const cardTitle = "파르나스 호텔 제주";

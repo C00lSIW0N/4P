@@ -24,7 +24,7 @@ function CardO() {
   };
 
   const handleTitleClick = () => {
-    window.location.href = "/detailpage";
+    window.location.href = "/detailpageo";
   };
 
   const cardTitle = "호텔 난타";
