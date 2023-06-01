@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     MessageAdapter messageAdapter;
 
     public static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
-    private static final String MY_SECRET_KEY = "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";
+    private static final String MY_SECRET_KEY = "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";
 
     OkHttpClient client;
 
@@ -144,19 +144,449 @@ public class MainActivity extends AppCompatActivity {
         //okhttp
         messageList.add(new MyMessage("...", MyMessage.SENT_BY_BOT));
 
-        if (question.equals("돌")) {
+        if (question.equals("내일 부산 날씨 알려주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "돌 정보입니다! \n http://10.0.2.2:3000 ";
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
             addResponse(websiteLink);
             return;
         }
 
-        if (question.equals("가위")) {
+        if (question.equals("내일 부산 날씨 알려 주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "가위 정보입니다! \n https://www.naver.com";
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
             addResponse(websiteLink);
             return;
         }
+
+        if (question.equals("내일 부산 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 부산 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 부산 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 부산 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 부산 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 부산 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 부산 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 부산 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 부산 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 부산 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("부산 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("부산 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("부산 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("부산 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 서울 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 서울 날씨알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 서울 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 서울 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 서울 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 서울 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 서울 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 서울 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 서울 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 서울 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 서울 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 서울 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 숙소 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+
 
         //추가된 내용
         JSONArray arr = new JSONArray();
