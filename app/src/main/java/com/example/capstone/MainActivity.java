@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     MessageAdapter messageAdapter;
 
     public static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
-    private static final String MY_SECRET_KEY = "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";
+    private static final String MY_SECRET_KEY = "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";
 
     OkHttpClient client;
 
@@ -120,8 +120,8 @@ public class MainActivity extends AppCompatActivity {
                 callAPI(question);
                 tv_welcome.setVisibility(View.GONE);
             }
-    });
-}
+        });
+    }
 
     void addToChat(String message, String sentBy) {
         runOnUiThread(new Runnable() {
@@ -144,19 +144,1692 @@ public class MainActivity extends AppCompatActivity {
         //okhttp
         messageList.add(new MyMessage("...", MyMessage.SENT_BY_BOT));
 
-        if (question.equals("돌")) {
+        if (question.equals("내일 제주도 날씨 알려주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "돌 정보입니다! \n http://10.0.2.2:3000 ";
+            String websiteLink = "내일 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
             addResponse(websiteLink);
             return;
         }
 
-        if (question.equals("가위")) {
+        if (question.equals("내일 제주도 날씨 알려 주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "가위 정보입니다! \n https://www.naver.com";
+            String websiteLink = "내일 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
             addResponse(websiteLink);
             return;
         }
+
+        if (question.equals("내일 제주도 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 제주도 날씨알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 제주시 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+        if (question.equals("내일 제주시 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 제주시 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 제주시 날씨알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 제주시 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 날씨알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 제주시 날씨알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 제주시 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 제주시 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 제주시 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 제주시 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주시 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주시 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주시 날씨알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주시 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주시 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주시 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주도 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주도 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주도 날씨 어떄?")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주도 날씨 어떄요?")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주도 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 제주도 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 제주도 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=제주도+날씨 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+
+        if (question.equals("내일 부산 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 부산 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 부산 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 부산 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 부산 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 부산 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 부산 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 부산 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 부산 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 부산 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 부산 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 부산 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 부산 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("부산 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("부산 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("부산 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("부산 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 부산 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=부산+날씨&oquery=중구+남포동&tqi=icAbWwprvxZsskYThfossssssw4-436704 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 서울 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 서울 날씨알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 서울 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("내일 서울 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "내일 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 서울 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 서울 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 서울 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("다음주 서울 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "다음주 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 서울 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 서울 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 서울 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("오늘 서울 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 날씨")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 날씨 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 날씨 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 날씨 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "오늘 서울 날씨 입니다!! \n * 네이버 날씨 * \n\n - 링크 확인 \n https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=서울+날씨&oquery=야놀자&tqi=icmXZdprvN8ss6RAGINssssstR0-493104 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 업체 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 업체 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 업체")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 업체 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 업체 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌터카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌터카 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌터카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌터카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌터카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌터카 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌터카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 업체 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 업체 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 업체")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 업체 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 업체 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌터카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌터카 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌터카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌터카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌터카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌터카 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌터카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 업체 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 업체 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 업체")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 업체 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 업체 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 근처 렌트카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌트카 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌트카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌트카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌트카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌트카 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주공항 렌트카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 업체 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 업체 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 업체")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 업체 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 업체 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 근처 렌트카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌트카 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌트카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌트카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌트카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌트카 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주 공항 렌트카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주공항 근처 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌터카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌터카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌터카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+        if (question.equals("제주도 렌터카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌터카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌터카 업체 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌터카 업체 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌터카 업체")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+        if (question.equals("제주도 렌터카 업체 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌터카 업체 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌트카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌트카 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌트카")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+        if (question.equals("제주도 렌트카 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌트카 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌트카 업체 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌트카 업체 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌트카 업체")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+        if (question.equals("제주도 렌트카 업체 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주도 렌트카 업체 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주도 렌터카 업체 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 제주속으로 \n https://jejussok.com/?ACE_REF=adwords_g&ACE_KW=&gad=1&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW6v_VSg0oGOY5YWw7tKGS-0Avs0XBo_-SAeDCqmZZOT2KWWZWHG-iRoCAL0QAvD_BwE \n\n - sk렌터카 \n https://homepage.skcarrental.com/?utm_source=google_pmax_pc&utm_medium=da&utm_campaign=dn_skr_jeju&utm_content=zero&BSCPN=SKR_JEJU&BSPRG=GDN&BSCCN1=SKR_JEJU&epe_vid=208&epe_tcd=312425642&gclid=CjwKCAjwg-GjBhBnEiwAMUvNWyrhLYOmVxQHEKj_nIrHsYLaG2zliZCtqRNkmlNsvzzu02epr5X_5hoCxY4QAvD_BwE " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 숙소 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 숙소 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 추천 숙소 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 추천 숙소")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 추천 숙소 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 추천 숙소 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 호텔 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 호텔 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 근처 호텔 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 호텔 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 호텔 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 호텔 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 추천 호텔 알려줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 추천 호텔")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 추천 호텔 알려주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("제주시 추천 호텔 알려 주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 숙소 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 숙소 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 숙소 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 숙소 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 숙소 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 호텔 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 호텔 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 호텔 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("서울 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "서울 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/서울/keyword-all?advert=KEYWORD&keyword=서울&searchKeyword=서울&pathDivision=keyword-all \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 호텔 추천해")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 호텔 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        } if (question.equals("명동 호텔 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 호텔 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("명동 근처 호텔 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 호텔 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 호텔 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("해운대 근처 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 호텔 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 근처 호텔 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("광안리 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 호텔 추천해줘")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 호텔 추천")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 호텔 추천해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+        if (question.equals("경복궁 근처 호텔 추천 해주세요")) {
+            // 특정 질문에 대한 웹사이트 링크를 설정
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            addResponse(websiteLink);
+            return;
+        }
+
+
 
         //추가된 내용
         JSONArray arr = new JSONArray();
