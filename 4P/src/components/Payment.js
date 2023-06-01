@@ -26,10 +26,10 @@ const Payment = () => {
   }, []);
 
   const Pay_toss = () => {
-    const sample1 = firestore.collection("user");;
-    sample1.doc("user1@user.com").set({숙소: "호텔1", 예약날짜: "friday11", 체크인여부: "0"});
-    sample1.doc("user2@user.com").set({숙소: "펜션1", 예약날짜: "monday14", 체크인여부: "0"});
-    sample1.doc("user3@user.com").set({숙소: "게하1", 예약날짜: "thursday18", 체크인여부: "0"});
+    const sample1 = firestore.collection("user");
+    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "0"});
+    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "0"});
+    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -53,10 +53,10 @@ const Payment = () => {
   };
 
   const Pay_kg = () => {
-    const sample1 = firestore.collection("user");;
-    sample1.doc("user1@user.com").set({숙소: "호텔1", 예약날짜: "friday11", 체크인여부: "0"});
-    sample1.doc("user2@user.com").set({숙소: "펜션1", 예약날짜: "monday14", 체크인여부: "0"});
-    sample1.doc("user3@user.com").set({숙소: "게하1", 예약날짜: "thursday18", 체크인여부: "0"});
+    const sample1 = firestore.collection("user");
+    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "0"});
+    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "0"});
+    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -80,10 +80,10 @@ const Payment = () => {
   };
 
   const Pay_kakao = () => {
-    const sample1 = firestore.collection("user");;
-    sample1.doc("user1@user.com").set({숙소: "호텔1", 예약날짜: "friday11", 체크인여부: "0"});
-    sample1.doc("user2@user.com").set({숙소: "펜션1", 예약날짜: "monday14", 체크인여부: "0"});
-    sample1.doc("user3@user.com").set({숙소: "게하1", 예약날짜: "thursday18", 체크인여부: "0"});
+    const sample1 = firestore.collection("user");
+    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "0"});
+    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "0"});
+    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -107,10 +107,10 @@ const Payment = () => {
   };
 
   const Pay_payco = () => {
-    const sample1 = firestore.collection("user");;
-    sample1.doc("user1@user.com").set({숙소: "호텔1", 예약날짜: "friday11", 체크인여부: "0"});
-    sample1.doc("user2@user.com").set({숙소: "펜션1", 예약날짜: "monday14", 체크인여부: "0"});
-    sample1.doc("user3@user.com").set({숙소: "게하1", 예약날짜: "thursday18", 체크인여부: "0"});
+    const sample1 = firestore.collection("user");
+    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "0"});
+    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "0"});
+    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
