@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { firestore } from "../firebase_config";
-import logoToss from "../images/logo_toss.png";
-import logoCreditCard from "../images/logo_credit_card.png";
-import logoKakao from "../images/logo_kakao.png";
-import logoPayco from "../images/logo_payco.png";
-import "./Payment.css";
-import PaymentCardB from "./PaymentCardB";
+import { firestore } from "../../firebase_config";
+import logoToss from "../../images/logo_toss.png";
+import logoCreditCard from "../../images/logo_credit_card.png";
+import logoKakao from "../../images/logo_kakao.png";
+import logoPayco from "../../images/logo_payco.png";
+import "../Payment.css";
+import PaymentCardL from "../PaymentCard/PaymentCardL";
 
 
 
-const Payment = () => {
+const PaymentL = () => {
   useEffect(() => {
     const jquery = document.createElement("script");
     jquery.src = "https://code.jquery.com/jquery-1.12.4.min.js";
@@ -27,9 +27,9 @@ const Payment = () => {
 
   const Pay_toss = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "0"});
-    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "0"});
-    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "0"});
+    sample1.doc("user1@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
+    sample1.doc("user2@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
+    sample1.doc("user3@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -54,9 +54,9 @@ const Payment = () => {
 
   const Pay_kg = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "0"});
-    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "0"});
-    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "0"});
+    sample1.doc("user1@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
+    sample1.doc("user2@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
+    sample1.doc("user3@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -81,9 +81,9 @@ const Payment = () => {
 
   const Pay_kakao = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "0"});
-    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "0"});
-    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "0"});
+    sample1.doc("user1@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
+    sample1.doc("user2@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
+    sample1.doc("user3@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -108,9 +108,9 @@ const Payment = () => {
 
   const Pay_payco = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "0"});
-    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "0"});
-    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "0"});
+    sample1.doc("user1@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
+    sample1.doc("user2@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
+    sample1.doc("user3@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -146,7 +146,7 @@ const Payment = () => {
     <div className="payment-container">
     <h1 className="payment-heading">확인 및 결제</h1>
       <div className="payment-card-container">
-        <PaymentCardB />
+        <PaymentCardL />
       </div>
       <br />
       <div className="button-container">
@@ -174,6 +174,4 @@ const Payment = () => {
   );
 };
 
-export default Payment;
-
-
+export default PaymentL;

@@ -12,9 +12,9 @@ function CardN() {
 
   const handleLike = (e) => {
     const sample1 = firestore.collection("user-cart");
-    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "1"});
-    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "1"});
-    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "1"});
+    sample1.doc("user1@user.com").set({숙소14이름: "파라스파라 서울", 숙소14예약날짜: "wednesday10", 숙소14체크: "1"});
+    sample1.doc("user2@user.com").set({숙소14이름: "파라스파라 서울", 숙소14예약날짜: "wednesday10", 숙소14체크: "1"});
+    sample1.doc("user3@user.com").set({숙소14이름: "파라스파라 서울", 숙소14예약날짜: "wednesday10", 숙소14체크: "1"});
     e.stopPropagation();
     setIsLiked(!isLiked);
   };
@@ -31,9 +31,9 @@ function CardN() {
     window.location.href = "/detailpagen";
   };
 
-  const cardTitle = "호텔 토스카나";
-  const priceText = "239,400원";
-  const cardText = `${priceText}\n엉또 폭포가 차로 약 5분, 여미지 식물원, 중문 색달해변, 천제연 폭포 등이 차로 약 15분 거리`;  
+  const cardTitle = "파라스파라 서울";
+  const priceText = "449,000원";
+  const cardText = `${priceText}\n서울 최초의 단지형 리조트\n건식 및 습식 사우나, 노천탕이 있어 피로를 풀며 시간을 보내실 수 있습니다.`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");

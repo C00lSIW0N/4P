@@ -1,27 +1,18 @@
 import React, { useCallback, useEffect } from "react";
-import { Link } from "react-router-dom";
-import DetailpageCard from "../DetailpageCard";
+// import { Link } from "react-router-dom";
+import DetailpageCardC from "../DetailpageCard/DetailpageCardC";
+import DetailpageCardCc from "../DetailpageCard/DetailpageCardCc";
+import "../Detailpage.css"
 
 const DetailpageC = () => {
-  const GotoList = () => {
-    window.location.href = "list";
-  };
-
-  const GotoPayment = () => {
-    window.location.href = "payment";
-  };
 
   return (
-    <>
-      <h1>상세 페이지</h1>
-      <DetailpageCard />
-      {/* <h1>
-        <button onClick={GotoList}>장바구니 담기</button>
-      </h1> */}
-      <h1>
-        <button onClick={GotoPayment}>결제</button>
-      </h1>
-    </>
+    <div className="detailpage-container">
+      <h1 className="detailpage-heading">메종 글래드 제주</h1>
+      <DetailpageCardC />
+      <br/>
+      <DetailpageCardCc />
+    </div>
   );
 };
 

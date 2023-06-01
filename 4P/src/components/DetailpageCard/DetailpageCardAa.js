@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function DetailpageCardAa() {
 
     const GotoPayment = () => {
-        window.location.href = "payment";
+        window.location.href = "paymenta";
       };
 
       const [isHovered1, setIsHovered1] = useState(false);
@@ -28,7 +28,7 @@ function DetailpageCardAa() {
             fontSize: "22px",
             fontWeight: "bold"
             }}
-            >딜럭스 킹 룸 (일반 전망)
+            >프리미어 더블 룸
             </span>
           <button
             onClick={GotoPayment}
@@ -54,7 +54,7 @@ function DetailpageCardAa() {
             fontSize: "22px",
             fontWeight: "bold"
             }}
-            >딜럭스 트윈 룸 (일반 전망)
+            >디럭스 패밀리 트윈 룸
             </span>
           <button
             onClick={GotoPayment}
@@ -80,7 +80,7 @@ function DetailpageCardAa() {
             fontSize: "22px",
             fontWeight: "bold"
             }}
-            >프리미어 패밀리 트윈 룸
+            >스탠다드 더블 룸
             </span>
           <button
             onClick={GotoPayment}
@@ -106,7 +106,7 @@ function DetailpageCardAa() {
             fontSize: "22px",
             fontWeight: "bold"
             }}
-            >주니어 스위트 패밀리 트윈
+            >디럭스 트윈 룸
             </span>
           <button
             onClick={GotoPayment}
@@ -132,7 +132,7 @@ function DetailpageCardAa() {
             fontSize: "22px",
             fontWeight: "bold"
             }}
-            >클럽 듀플렉스 스위트 (바다 전망)
+            >온돌 테라스 더블 룸
             </span>
           <button
             onClick={GotoPayment}

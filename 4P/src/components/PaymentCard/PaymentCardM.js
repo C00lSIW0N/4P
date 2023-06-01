@@ -2,15 +2,15 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import sampleB from '../images/sampleB.jpg';
+import sampleM from '../../images/sampleM.jpg';
 
-function PaymentCardB() {
-  const cardTitle = "파르나스 호텔 제주";
+function PaymentCardM() {
+  const cardTitle = "호텔 프린스 서울";
 
   return (
     <Card style={{ width: '50rem', height: '50rem' }}>
       <div style={{ height: '10cm', overflow: 'hidden' }}>
-      <Card.Img variant="top" src={sampleB} style={{ height: '100%', objectFit: 'cover' }} />
+      <Card.Img variant="top" src={sampleM} style={{ height: '100%', objectFit: 'cover' }} />
         </div>
       <Card.Body>
         <Card.Title
@@ -87,7 +87,7 @@ function PaymentCardB() {
             fontSize: "20px",
             display: "flex",
           }}
-        >\457,000 X 1박</ListGroup.Item>
+        >\422,529 X 1박</ListGroup.Item>
         <ListGroup.Item
         style={{
             fontWeight: "bold",
@@ -97,10 +97,10 @@ function PaymentCardB() {
             display: "flex",
             justifyContent: "flex-end"
           }}
-        >\457,000</ListGroup.Item>
+        >\422,529</ListGroup.Item>
       </ListGroup>
     </Card>
   );
 }
 
-export default PaymentCardB;
+export default PaymentCardM;

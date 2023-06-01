@@ -12,9 +12,9 @@ function CardL() {
 
   const handleLike = (e) => {
     const sample1 = firestore.collection("user-cart");
-    sample1.doc("user1@user.com").set({숙소12이름: "히든 클리프 호텔", 숙소12예약날짜: "friday18", 숙소12체크: "1"});
-    sample1.doc("user2@user.com").set({숙소12이름: "히든 클리프 호텔", 숙소12예약날짜: "friday18", 숙소12체크: "1"});
-    sample1.doc("user3@user.com").set({숙소12이름: "히든 클리프 호텔", 숙소12예약날짜: "friday18", 숙소12체크: "1"});
+    sample1.doc("user1@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "1"});
+    sample1.doc("user2@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "1"});
+    sample1.doc("user3@user.com").set({숙소12이름: "히든 클리프 호텔&네이처", 숙소12예약날짜: "friday18", 숙소12체크: "1"});
     e.stopPropagation();
     setIsLiked(!isLiked);
   };
@@ -31,7 +31,7 @@ function CardL() {
     window.location.href = "/detailpagel";
   };
 
-  const cardTitle = "히든 클리프 호텔";
+  const cardTitle = "히든 클리프 호텔&네이처";
   const priceText = "242,880원";
   const cardText = `${priceText}\n자연 친화적인 인피니티 풀\n270도 파노라마 전망을 감상할 수 있는 올 데이 다이닝 레스토랑 '파노라마’에서는 조식 뷔페부터 다채롭게 구성된 메뉴`;  
   const MAX_TEXT_LINES = 3;

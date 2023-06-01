@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function DetailpageCardBb() {
 
     const GotoPayment = () => {
-        window.location.href = "payment";
+        window.location.href = "paymentb";
       };
 
       const [isHovered1, setIsHovered1] = useState(false);

@@ -12,9 +12,9 @@ function CardO() {
 
   const handleLike = (e) => {
     const sample1 = firestore.collection("user-cart");
-    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "1"});
-    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "1"});
-    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "1"});
+    sample1.doc("user1@user.com").set({숙소15이름: "시그니엘 부산", 숙소15예약날짜: "wednesday11", 숙소15체크: "1"});
+    sample1.doc("user2@user.com").set({숙소15이름: "시그니엘 부산", 숙소15예약날짜: "wednesday11", 숙소15체크: "1"});
+    sample1.doc("user3@user.com").set({숙소15이름: "시그니엘 부산", 숙소15예약날짜: "wednesday11", 숙소15체크: "1"});
     e.stopPropagation();
     setIsLiked(!isLiked);
   };
@@ -31,9 +31,9 @@ function CardO() {
     window.location.href = "/detailpageo";
   };
 
-  const cardTitle = "호텔 난타";
-  const priceText = "92,770원";
-  const cardText = `${priceText}\n260석 규모의 회의 공간 그랜드볼룸, 난타 공연과 다양한 국제회의를 열 수 있는 650석 규모의 컨퍼런스 룸`;  
+  const cardTitle = "시그니엘 부산";
+  const priceText = "1,512,500원";
+  const cardText = `${priceText}\n'<5성급:한국관광공사 인증>\n엘시티(LCT) 타워 3층부터 19층까지 자리하고 있는 럭셔리 호텔`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");

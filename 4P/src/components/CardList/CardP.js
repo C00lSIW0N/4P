@@ -12,9 +12,9 @@ function CardP() {
 
   const handleLike = (e) => {
     const sample1 = firestore.collection("user-cart");
-    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "1"});
-    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "1"});
-    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "1"});
+    sample1.doc("user1@user.com").set({숙소16이름: "파라다이스 호텔 부산", 숙소16예약날짜: "wednesday12", 숙소16체크: "1"});
+    sample1.doc("user2@user.com").set({숙소16이름: "파라다이스 호텔 부산", 숙소16예약날짜: "wednesday12", 숙소16체크: "1"});
+    sample1.doc("user3@user.com").set({숙소16이름: "파라다이스 호텔 부산", 숙소16예약날짜: "wednesday12", 숙소16체크: "1"});
     e.stopPropagation();
     setIsLiked(!isLiked);
   };
@@ -31,9 +31,9 @@ function CardP() {
     window.location.href = "/detailpagep";
   };
 
-  const cardTitle = "에벤에셀호텔";
-  const priceText = "79,902원";
-  const cardText = `${priceText}\n햄버거 전문점 '버거 307'\n망고 음료 전문 카페 '망고레이'`;  
+  const cardTitle = "파라다이스 호텔 부산";
+  const priceText = "392,040원";
+  const cardText = `${priceText}\n'<5성급:인증>\n바다 및 가든 뷰의 레스토랑 '온더플레이트'와 '닉스 그릴&와인', 음료를 즐길 수 있는 로비 라운지 '크리스탈 가든'`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");

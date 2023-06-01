@@ -3,13 +3,13 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import sampleB from '../../images/sampleB.jpg';
-import sampleBb from '../../images/sampleBb.jpg';
-import sampleBbb from '../../images/sampleBbb.jpg';
+import sampleA from '../../images/sampleA.jpg';
+import sampleAa from '../../images/sampleAa.jpg';
+import sampleAaa from '../../images/sampleAaa.jpg';
 
 function DetailpageCardA() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [sampleB, sampleBb, sampleBbb];
+  const images = [sampleA, sampleAa, sampleAaa];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,8 +21,8 @@ function DetailpageCardA() {
     };
   }, [images.length]);
 
-  const cardTitle = "제주도 서귀포시 중문관광로72번길 100";
-  const cardText = `파르나스 호텔 제주는 중문 색달 해변 근처 주상절리 위에 위치하고 있어, 휴식을 위한 최적의 장소에 위치하고 있습니다. 새롭게 선보이는 파르나스 호텔 제주의 디자인은 런던 유명 인테리어 스튜디오인 헤타(HETA)와 스튜디오 1508에서 진행했으며, 제주의 자연과 모던한 현대적인 디자인을 접목해 색다른 고급스러움을 표현했습니다. 또한 객실의 가구는 이스턴 에디션에서 자연의 돌, 나무, 전통 대문 '정남' 등에서 영감을 받아 제작했습니다. 총 307객실과 올 데이 다이닝 레스토랑, 로비 라운지와 바가 있으며 중, 소규모 미팅룸까지 보유하고 있어 고객의 여행 목적에 맞춰 시설 및 서비스 제공이 가능합니다. 모든 객실은 발코니를 가지고 있어 제주의 자연을 객실 안에서도 즐길 수 있습니다. 특히 파르나스 호텔 제주의 가장 시그니처인 인피니티 풀은 국내에서 가장 긴 110미터로 제주의 바다를 한눈에 즐길 수 있는 최적의 장소입니다. 이외에도 본에스티스 스파, 프리미엄 잉글리쉬 멤버십 클럽 프로맘킨더, 스페니쉬 레스토랑 만추안, GS25 편의점 등의 편의 시설도 제공하고 있습니다.`;
+  const cardTitle = "제주도 서귀포시 중문관광로72번길 75";
+  const cardText = `제주 중문 관광 단지에 위치하고 있는 제주신라호텔은 사계절 휴양 리조트호텔입니다. 해변가가 내려다보이는 쉬리의 언덕이 유명한 제주 신라 호텔은 중문관광단지 내 자리하고 있어 여미지식물원, 천제연폭포, 별 내린 전망대 등이 아주 가까운 거리에 있습니다. 또한, 제주국제공항은 차로 약 1시간 5분 거리에 있습니다. 제주의 자연을 느낄 수 있는 숨비 정원을 사이로 실내, 외 수영장과 따뜻한 온수 풀 및 자쿠지 스파를 즐기며 카바나에서 휴식을 취하실 수 있습니다. 캠핑, 게임 등을 즐기실 수 있는 레저 프로그램과 외에도 피트니스센터, 비즈니스 센터, 연회장, 아케이드 등이 마련되어 있습니다. 38개의 스위트 객실을 포함한 429개 객실을 보유하고 있으며 산, 정원 또는 바다를 감상하실 수 있습니다. 객실 내부에는 TV, 냉장고, 에어컨, 금고, 슬리퍼 등이 완비되어 있으며 욕실에는 욕실용품, 비데, 헤어드라이어 등이 있습니다. 뷔페식당인 '더 파크뷰', 한식당 '천지', 일식당 '히노데'에서는 다양한 경험할 수 있습니다. 또한, 로비 라운지 '바당', 라이브러리 바인 '올래', '패스트리 부티크'도 갖춰져 있습니다.`;
   const MAX_TEXT_LINES = 12;
   const [isExpanded, setIsExpanded] = useState(false); // 상태 추가
 
@@ -84,7 +84,7 @@ function DetailpageCardA() {
             display: "flex",
             justifyContent: "flex-end"
           }}
-        >평점 9.3</ListGroup.Item>
+        >평점 9.0</ListGroup.Item>
         <ListGroup.Item
         style={{
             fontWeight: "bold",
@@ -94,7 +94,8 @@ function DetailpageCardA() {
             display: "flex",
             justifyContent: "flex-end"
           }}
-          >911개의 확인된 투숙객 후기 참고</ListGroup.Item>
+          >1,542개의 확인된 투숙객 후기 참고
+          </ListGroup.Item>
       </ListGroup>
     </Card>
   );

@@ -12,9 +12,9 @@ function CardM() {
 
   const handleLike = (e) => {
     const sample1 = firestore.collection("user-cart");
-    sample1.doc("user1@user.com").set({숙소1이름: "호텔1", 숙소1예약날짜: "friday11", 숙소1체크: "1"});
-    sample1.doc("user2@user.com").set({숙소2이름: "펜션1", 숙소2예약날짜: "monday14", 숙소2체크: "1"});
-    sample1.doc("user3@user.com").set({숙소3이름: "게하1", 숙소3예약날짜: "thursday18", 숙소3체크: "1"});
+    sample1.doc("user1@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "1"});
+    sample1.doc("user2@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "1"});
+    sample1.doc("user3@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "1"});
     e.stopPropagation();
     setIsLiked(!isLiked);
   };
@@ -31,9 +31,9 @@ function CardM() {
     window.location.href = "/detailpagem";
   };
 
-  const cardTitle = "그랜드 조선 제주";
-  const priceText = "320,711원";
-  const cardText = `${priceText}\n스위트 전용 건물인 신관 ‘그랜드 조선 힐 스위트’는 완벽한 공간 분리를 통해 오직 서로에게만 집중하고 싶은 허니무너들에게 가장 달콤하고 프라이빗한 선물을 선사`;  
+  const cardTitle = "호텔 프린스 서울";
+  const priceText = "422,529원";
+  const cardText = `${priceText}\n일부 객실 서울N타워 전경을 감상\n러기지 보관, 심카드 대여 서비스를 유료로 제공`;  
   const MAX_TEXT_LINES = 3;
   const textLines = cardText.split("\n").slice(0, MAX_TEXT_LINES);
   const truncatedText = textLines.join("\n");
