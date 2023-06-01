@@ -8,6 +8,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import android.content.Intent;
 import android.os.Message;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -121,6 +122,13 @@ public class MainActivity extends AppCompatActivity {
                 tv_welcome.setVisibility(View.GONE);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
     }
 
     void addToChat(String message, String sentBy) {
@@ -1895,4 +1903,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
