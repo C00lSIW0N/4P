@@ -1207,196 +1207,196 @@ public class MainActivity extends AppCompatActivity {
 
         if (question.equals("제주시 근처 숙소 추천해")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 숙소 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb" ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 숙소 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 숙소 추천해")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 숙소 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 숙소 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 추천 숙소 알려줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 추천 숙소")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 추천 숙소 알려주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 추천 숙소 알려 주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 호텔 추천해")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb" ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 호텔 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 근처 호텔 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 호텔 추천해")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 호텔 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 호텔 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 추천 호텔 알려줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 추천 호텔")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 추천 호텔 알려주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("제주시 추천 호텔 알려 주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "제주시 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/제주시?keyword=제주시&searchKeyword=제주시 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/제주시--제주특별자치도--대한민국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=제주시%2C%20제주특별자치도&place_id=ChIJ_XltioXgDDUR4pyR4WmImks&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageb " ;
             addResponse(websiteLink);
             return;
         }
@@ -1438,183 +1438,183 @@ public class MainActivity extends AppCompatActivity {
 
         if (question.equals("명동 숙소 추천해")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         } if (question.equals("명동 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         } if (question.equals("명동 숙소 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         } if (question.equals("명동 숙소 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 근처 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 근처 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 근처 숙소 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 근처 숙소 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem" ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 근처 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep" ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 근처 숙소 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 근처 숙소 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 근처 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagepㅍ " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 근처 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 근처 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 근처 숙소 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 근처 숙소 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 근처 숙소 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen" ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 근처 숙소 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 근처 숙소 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 근처 숙소 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 숙소 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
@@ -1656,183 +1656,183 @@ public class MainActivity extends AppCompatActivity {
 
         if (question.equals("명동 호텔 추천해")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         } if (question.equals("명동 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         } if (question.equals("명동 호텔 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         } if (question.equals("명동 호텔 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 근처 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 근처 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 근처 호텔 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("명동 근처 호텔 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "명동 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/명동?keyword=명동&searchKeyword=명동 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/서울-명동/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagem " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 근처 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep" ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 근처 호텔 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 근처 호텔 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("해운대 근처 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "해운대 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20해운대?keyword=부산%20해운대&searchKeyword=부산%20해운대 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=해운대&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagep " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 근처 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 근처 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 근처 호텔 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 근처 호텔 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("광안리 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "광안리 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/부산%20광안리?keyword=부산%20광안리&searchKeyword=부산%20광안리 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=광안리&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpageo " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 근처 호텔 추천해줘")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 근처 호텔 추천")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 근처 호텔 추천해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen" ;
             addResponse(websiteLink);
             return;
         }
 
         if (question.equals("경복궁 근처 호텔 추천 해주세요")) {
             // 특정 질문에 대한 웹사이트 링크를 설정
-            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000 " ;
+            String websiteLink = "경복궁 근처 추천 호텔 정보입니다! \n * 아래 사이트 들을 참고 해주세요 * \n\n - 야놀자 \n https://www.yanolja.com/search/경복궁?keyword=경복궁&searchKeyword=경복궁 \n\n - 에어비앤비 \n https://www.airbnb.co.kr/s/한국/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&date_picker_type=calendar&checkin=2023-06-09&checkout=2023-06-10&search_type=unknown&query=경복궁&refinement_paths%5B%5D=%2Fhomes \n\n- 4P 예약 \n  http://10.0.2.2:3000/detailpagen " ;
             addResponse(websiteLink);
             return;
         }
