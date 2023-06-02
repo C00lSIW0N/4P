@@ -54,9 +54,9 @@ const PaymentC = () => {
 
   const Pay_kg = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
-    sample1.doc("user2@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
-    sample1.doc("user3@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user1@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user2@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user3@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -81,9 +81,9 @@ const PaymentC = () => {
 
   const Pay_kakao = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
-    sample1.doc("user2@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
-    sample1.doc("user3@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user1@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user2@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user3@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -108,9 +108,9 @@ const PaymentC = () => {
 
   const Pay_payco = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
-    sample1.doc("user2@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
-    sample1.doc("user3@user.com").set({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user1@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user2@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
+    sample1.doc("user3@user.com").update({숙소3이름: "메종 글래드 제주", 숙소3예약날짜: "monday14", 숙소3체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 

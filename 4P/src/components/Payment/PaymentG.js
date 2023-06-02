@@ -54,9 +54,9 @@ const PaymentG = () => {
 
   const Pay_kg = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
-    sample1.doc("user2@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
-    sample1.doc("user3@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user1@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user2@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user3@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -81,9 +81,9 @@ const PaymentG = () => {
 
   const Pay_kakao = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
-    sample1.doc("user2@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
-    sample1.doc("user3@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user1@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user2@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user3@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -108,9 +108,9 @@ const PaymentG = () => {
 
   const Pay_payco = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
-    sample1.doc("user2@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
-    sample1.doc("user3@user.com").set({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user1@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user2@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
+    sample1.doc("user3@user.com").update({숙소7이름: "해비치 호텔&리조트", 숙소7예약날짜: "friday13", 숙소7체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 

@@ -27,9 +27,9 @@ const PaymentM = () => {
 
   const Pay_toss = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
-    sample1.doc("user2@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
-    sample1.doc("user3@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user1@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user2@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user3@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -54,9 +54,9 @@ const PaymentM = () => {
 
   const Pay_kg = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
-    sample1.doc("user2@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
-    sample1.doc("user3@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user1@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user2@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user3@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -81,9 +81,9 @@ const PaymentM = () => {
 
   const Pay_kakao = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
-    sample1.doc("user2@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
-    sample1.doc("user3@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user1@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user2@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user3@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
@@ -108,9 +108,9 @@ const PaymentM = () => {
 
   const Pay_payco = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
-    sample1.doc("user2@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
-    sample1.doc("user3@user.com").set({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user1@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user2@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
+    sample1.doc("user3@user.com").update({숙소13이름: "호텔 프린스 서울", 숙소13예약날짜: "wednesday9", 숙소13체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
