@@ -12,9 +12,9 @@ function CardH() {
 
   const handleLike = (e) => {
     const sample1 = firestore.collection("user-cart");
-    sample1.doc("user1@user.com").set({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "1"});
-    sample1.doc("user2@user.com").set({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "1"});
-    sample1.doc("user3@user.com").set({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "1"});
+    sample1.doc("user1@user.com").update({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "1"});
+    sample1.doc("user2@user.com").update({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "1"});
+    sample1.doc("user3@user.com").update({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "1"});
     e.stopPropagation();
     setIsLiked(!isLiked);
   };

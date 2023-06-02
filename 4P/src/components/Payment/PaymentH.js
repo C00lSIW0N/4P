@@ -27,9 +27,9 @@ const PaymentH = () => {
 
   const Pay_toss = () => {
     const sample1 = firestore.collection("user");
-    sample1.doc("user1@user.com").set({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "0"});
-    sample1.doc("user2@user.com").set({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "0"});
-    sample1.doc("user3@user.com").set({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "0"});
+    sample1.doc("user1@user.com").update({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "0"});
+    sample1.doc("user2@user.com").update({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "0"});
+    sample1.doc("user3@user.com").update({숙소8이름: "휘닉스 제주 섭지코지", 숙소8예약날짜: "friday14", 숙소8체크: "0"});
     const { IMP } = window;
     IMP.init("imp02656648");
 
